@@ -1,1 +1,1236 @@
-[{"id":"Prime","name":" PRIMARY WEAPON","source":"JAKAL","license":"\"Jak of Al Trades\" Multiframe","license_level":1,"description":"","effect":"<p>This weapon can make two attacks at a time; if the frame loses half or more of its Structure, it can only make one attack at a time.</p>","on_attack":"","on_hit":"","on_crit":"","mount":"Main","type":"Launcher","cost":"1","barrage":true,"skirmish":true,"no_attack":false,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"type":"Variable","val":"1d3"}],"range":[{"type":"Range","val":"5"},{"type":"Threat","val":"1"}],"sp":"1","tags":[{"id":"tg_accurate","val":"2"},{"id":"tg_unique"}],"actions":[{"name":"Switch Profile","activation":"Free","detail":"<p>Switch Profile<br><br></p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Switch Profile","activation":"Reaction","detail":"<p>Switch Profile</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":"<p>Skirmish or Barrage with this weapon and the first attack has been rolled but the second hasn't</p>"}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"profiles":[{"name":"Primary Weapon (Launcher/CQB)","description":"","effect":"<p>This weapon can make two attacks at a time; if the frame loses half or more of its Structure, it can only make one attack at a time.</p>","on_attack":"<p>Roll 1d3 to determine damage type</p><p>1- kinetic</p><p>2- energy</p><p>3- explosive</p>","on_hit":"","on_crit":"","type":"CQB","cost":1,"damage":[{"type":"Variable","val":"1d3"}],"range":[{"type":"Range","val":"5"},{"type":"Threat","val":"1"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[]},{"name":"Primary Weapon (Launcher/Melee)","description":"","effect":"<p>This weapon can make two attacks at a time; if the frame loses half or more of its Structure, it can only make one attack at a time.</p>","on_attack":"<p>Roll 1d3 to determine damage type</p><p>1- heat</p><p>2- burn</p><p>3- choose Kinetic, Energy, or Explosive</p>","on_hit":"","on_crit":"","type":"Melee","cost":1,"damage":[{"type":"Variable","val":"1d3"}],"range":[{"type":"Range","val":"1"},{"type":"Threat","val":"1"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[]}]},{"id":"AAW","name":"Anti-Armor Weapon","source":"JAKAL","license":"\"Jak of Al Trades\" Multiframe","license_level":1,"description":"","effect":"","on_attack":"<p>Roll 1d6 to determine damage type</p><p>1- kinetic</p><p>2- energy</p><p>3- explosive</p><p>4- heat</p><p>5- burn</p><p>6- choose</p>","on_hit":"","on_crit":"","mount":"Heavy","type":"Rifle","cost":1,"barrage":true,"skirmish":true,"no_attack":false,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"val":"1d6","type":"Variable"}],"range":[{"val":"10","type":"Range"}],"sp":0,"tags":[{"id":"tg_accurate","val":"1"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"profiles":[]},{"id":"JAKAL_CuChulainn","name":"Cú Chulainn","source":"JAKAL","license":"","license_level":0,"description":"","effect":"<p>When printed, choose a damage type (kinetic, energy, explosive)<br>This weapon can not attack normally, you can use it to attack a character with the lock on condition as a free action at the end of your turn</p>","on_attack":"","on_hit":"","on_crit":"","mount":"Auxiliary","type":"Launcher","cost":1,"barrage":false,"skirmish":false,"no_attack":false,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"val":"1","type":"Variable"}],"range":[{"val":"15","type":"Range"}],"sp":0,"tags":[{"id":"tg_exotic"}],"actions":[{"name":"Release the Hound","activation":"Free","detail":"<p>Attack with the Cú Chulainn</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"profiles":[]},{"id":"JAKAL_ConallCernach","name":"Conall Cernach","source":"JAKAL","license":"","license_level":0,"description":"","effect":"<p>When printed choose a damage type (heat, burn)<br>This weapon can not be used to attack normally, instead you may fire it as protocol</p>","on_attack":"","on_hit":"","on_crit":"","mount":"Auxiliary","type":"Nexus","cost":1,"barrage":false,"skirmish":false,"no_attack":true,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"type":"Variable","val":"1"}],"range":[{"type":"Range","val":"15"}],"sp":0,"tags":[{"id":"tg_exotic"}],"actions":[{"name":"Victorious Assault","activation":"Protocol","detail":"<p>Fire the Conall Cernach</p>","cost":"0","pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Deirdre","activation":"Free","detail":"<p>Attack with Conall Cernach</p><p>can only be used if Navan Fort is in effect</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"profiles":[]},{"id":"JAKAL_Loegaire","name":"Lóegaire","source":"JAKAL","license":"","license_level":0,"description":"","effect":"<p>This weapon can not attack normally, instead you may attack with it using the Headless reaction</p>","on_attack":"","on_hit":"","on_crit":"","mount":"Auxiliary","type":"CQB","cost":1,"barrage":false,"skirmish":false,"no_attack":true,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"type":"Kinetic","val":"1"}],"range":[{"type":"Range","val":"15"},{"type":"Threat","val":"3"}],"sp":0,"tags":[{"id":"tg_exotic"}],"actions":[{"name":"Headless","activation":"Reaction","detail":"<p>Attack with the Lóegaire</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":"<p>An enemy begins or ends a movement in your, or an ally's threat range </p>"},{"name":"Naoise","activation":"Free","detail":"<p>Attack with the Lóegaire<br>Can only be used if Navan Fort is in effect</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"profiles":[]},{"id":"JAKAL_CathbadTracerRifle","name":"Cathbad Tracer Rifle","source":"JAKAL","license":"Emain Macha","license_level":1,"description":"","effect":"<p>The armor piercing effect only applies to hits</p>","on_attack":"","on_hit":"<p>Apply lock on to the target</p>","on_crit":"","mount":"Auxiliary","type":"Rifle","cost":1,"barrage":true,"skirmish":true,"no_attack":false,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"type":"Kinetic","val":"1"}],"range":[{"type":"Range","val":"15"}],"sp":0,"tags":[{"id":"tg_reliable","val":"1"},{"id":"tg_ap"},{"id":"tg_unique"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"profiles":[]},{"id":"JAKAL_FergusCannon","name":"Fergus Cannon","source":"JAKAL","license":"Emain Macha","license_level":2,"description":"","effect":"","on_attack":"","on_hit":"<p>Apply scan to target</p>","on_crit":"<p>Remove Hidden and Invisible from target until the start of their next turn or the effect giving it to them ends (whichever happens first)</p>","mount":"Auxiliary","type":"Cannon","cost":1,"barrage":true,"skirmish":true,"no_attack":false,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"type":"Energy","val":"2"}],"range":[{"type":"Range","val":"15"}],"sp":0,"tags":[{"id":"tg_unique"},{"id":"tg_accurate","val":"1"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"profiles":[]},{"id":"JAKAL_LeabharchamQuill","name":"Leabharcham's quill","source":"JAKAL","license":"Emain Macha","license_level":3,"description":"","effect":"<p>This weapon does not need to be picked up if thrown, instead a new one is printed at the start of your next turn</p><p>if you have the hunter rank 2 talent (Knife Juggler) increase this weapon's thrown range to 15 and the threat increases to 5</p>","on_attack":"","on_hit":"","on_crit":"","mount":"Auxiliary","type":"Melee","cost":1,"barrage":true,"skirmish":true,"no_attack":false,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"type":"Explosive","val":"3"}],"range":[{"type":"Threat","val":"1"},{"type":"Thrown","val":"5"}],"sp":0,"tags":[{"id":"tg_seeking"},{"id":"tg_smart"},{"id":"tg_unique"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"profiles":[]},{"id":"JAKAL_Blastpick","name":"Blast-pick","source":"JAKAL","license":"Deepwolf","license_level":1,"description":"","effect":"<p>Progresses through profiles as you charge the attack</p>","on_attack":"","on_hit":"","on_crit":"","mount":"Heavy","type":"Melee","cost":1,"barrage":true,"skirmish":true,"no_attack":false,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"type":"Kinetic","val":"1d6"}],"range":[{"type":"Blast","val":"2"}],"sp":0,"tags":[],"actions":[{"name":"Crush","activation":"Reaction","detail":"<p>Progress to the next profile</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":"<p>Used the Blast-pick's Charge action</p>"}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"profiles":[{"name":"Unprepared","description":"","effect":"<p>After the attack, switch back to the Unprepared profile</p>","on_attack":"","on_hit":"","on_crit":"","type":"Melee","cost":1,"damage":[{"val":"1d6","type":"Kinetic"}],"range":[{"type":"Threat","val":"2"}],"actions":[{"name":"Load Blast-Pick","activation":"Protocol","detail":"<p>Switch to the next profile</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[{"id":"tg_inaccurate","val":"1"}]},{"name":"Loaded","description":"","effect":"<p>After the attack, switch back to the Unprepared profile</p>","on_attack":"","on_hit":"","on_crit":"","type":"Melee","cost":1,"damage":[{"val":"1d6+3","type":"Explosive"}],"range":[{"type":"Threat","val":"2"}],"actions":[{"name":"Charge","activation":"Quick","detail":"<p>Progress to the next profile</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[]},{"name":"Locked","description":"","effect":"<p>After the attack, switch back to the Unprepared profile</p>","on_attack":"","on_hit":"","on_crit":"","type":"Melee","cost":1,"damage":[{"type":"Explosive","val":"2d6"}],"range":[{"type":"Threat","val":"2"}],"actions":[{"name":"Charge","activation":"Quick","detail":"<p>Progress to the next profile</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[]},{"name":"Charged","description":"","effect":"<p>After the attack, switch back to the Unprepared profile</p>","on_attack":"","on_hit":"","on_crit":"","type":"","cost":1,"damage":[{"type":"Explosive","val":"2d6"}],"range":[{"type":"Threat","val":"2"}],"actions":[{"name":"Charge","activation":"Quick","detail":"<p>Progress to the next profile</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[{"id":"tg_ap","val":"0"}]},{"name":"Blast","description":"","effect":"<p>After the attack, switch back to the Unprepared profile</p>","on_attack":"","on_hit":"","on_crit":"","type":"","cost":1,"damage":[{"type":"Explosive","val":"2d6+3"},{"type":"Burn","val":"1"}],"range":[{"type":"Threat","val":"3"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[{"id":"tg_ap","val":""},{"id":"tg_reliable","val":"4"}]}]},{"id":"JAKAL_LegacyFortificationSystem","name":"JAKAL Legacy Fortification System","source":"JAKAL","license":"","license_level":0,"description":"","effect":"<p>Has to be deployed to be used</p>","on_attack":"","on_hit":"","on_crit":"","mount":"Superheavy","type":"???","cost":1,"barrage":true,"skirmish":true,"no_attack":true,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[],"range":[],"sp":"1","tags":[{"id":"JAKAL_Fortification"}],"actions":[{"name":"Deploy Fortification","activation":"Quick","detail":"<p>Deploy</p>","cost":0,"pilot":false,"damage":[],"range":[{"type":"Range","val":"1"}],"synergy_locations":["deployable","quick_activation"],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Switch Profile","activation":"Free","detail":"<p>Switch Profile</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[{"name":"JakAl Legacy Fortification System","type":"Fortification","detail":"<p>JakAl Legacy Fortification System<br>Provides hard cover.</p>","size":1,"activation":"","deactivation":"","recall":"","redeploy":"","instances":1,"cost":1,"armor":"1","hp":"10","evasion":"5","edef":"","heatcap":"","repcap":"","sensor_range":"","tech_attack":"","save":"","speed":"","pilot":false,"mech":false,"actions":[],"bonuses":[],"synergies":[],"counters":[]}],"counters":[],"integrated":[],"special_equipment":[],"profiles":[{"name":"Cupola (Rifle)","description":"","effect":"","on_attack":"","on_hit":"","on_crit":"","type":"Rifle","cost":1,"damage":[{"type":"Energy","val":"1d6"}],"range":[{"val":"15","type":"Range"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[{"id":"tg_reliable","val":"1"}]},{"name":"Turret (Cannon)","description":"","effect":"","on_attack":"","on_hit":"","on_crit":"","type":"Cannon","cost":1,"damage":[{"type":"Explosive","val":"2d3"}],"range":[{"type":"Range","val":"12"},{"type":"Blast","val":"1"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[]},{"name":"Barbette (Launcher)","description":"","effect":"","on_attack":"","on_hit":"","on_crit":"","type":"Launcher","cost":1,"damage":[{"type":"Kinetic","val":"1d3+3"}],"range":[{"type":"Range","val":"10"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[{"id":"tg_arcing"}]},{"name":"Artillery (Nexus)","description":"","effect":"<p>Roll 1d6 to determine damage type-</p><p>1- Kinetic</p><p>2- Energy</p><p>3- Explosive</p><p>4- Heat</p><p>5- Burn</p><p>6- Choose (Kinetic, Energy, or Explosive)</p>","on_attack":"","on_hit":"","on_crit":"","type":"Nexus","cost":1,"damage":[{"val":"1d3","type":"Variable"}],"range":[{"type":"Line","val":"7"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[{"id":"tg_seeking"},{"id":"tg_smart"}]},{"name":"Flamethrowers (CQB)","description":"","effect":"","on_attack":"","on_hit":"","on_crit":"","type":"CQB","cost":1,"damage":[{"val":"2","type":"Heat"}],"range":[{"type":"Threat","val":"3"},{"type":"Cone","val":"5"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[]},{"name":"Defensive Construction (Melee)","description":"","effect":"","on_attack":"","on_hit":"","on_crit":"","type":"Melee","cost":1,"damage":[{"type":"Burn","val":"1"}],"range":[{"type":"Threat","val":"2"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"tags":[]}]},{"id":"JAKAL_WolfhoundShotgun","name":"Wolfhound Shotgun","source":"JAKAL","license":"Deepwolf","license_level":2,"description":"<p></p>","effect":"<p>You can fire one or both barrels, firing both barrels means the weapon has to be reloaded after one shot instead of two.</p><p>Firing both barrels can only be done if the Wolfhound has not fired since the last time it was reloaded, firing it this way increases its damage to 4d6 and its Knockback to 4.</p><p>When this weapon is reloaded, you may choose to deal 4 Kinetic Damage to an adjacent character from the force of the ejecting shells.</p>","on_attack":"","on_hit":"","on_crit":"","mount":"Heavy","type":"CQB","cost":"3","barrage":true,"skirmish":true,"no_attack":false,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"type":"Kinetic","val":"2d6"}],"range":[{"type":"Range","val":"3"},{"type":"Thrown","val":"3"}],"sp":0,"tags":[{"id":"tg_loading","val":"2"},{"id":"tg_knockback","val":"2"},{"id":"tg_inaccurate"},{"id":"tg_drone"},{"id":"tg_deployable"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[{"name":"JAKAL_WolfhoundDrone","type":"Wolfhound Drone","detail":"<p>The Wolfhound Shotgun can be deployed to a free space within Sensors and line of sight as a free action, where it becomes a Drone. Once deployed, you may still use it for Skirmish and Barrage attacks as though it is still a weapon, but with line of sight and Range traced from its location.<br>You may recall or redeploy the Wolfhound Drone as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene. If destroyed, it follows the rules for destroyed Drones and can’t be used until repaired.</p>","size":1,"activation":"","deactivation":"","recall":"","redeploy":"","instances":1,"cost":1,"armor":"1","hp":"8","evasion":"7","edef":"7","heatcap":"3","repcap":"","sensor_range":"","tech_attack":"","save":"","speed":"5","pilot":false,"mech":false,"actions":[],"bonuses":[],"synergies":[],"counters":[]}],"counters":[],"integrated":[],"special_equipment":[],"profiles":[]},{"id":"JAKAL_MT","name":" Mounted Turret","source":"JAKAL","license":"\"Jak of Al Trades\" Multiframe","license_level":1,"description":"<p>As a protocol you may roll 1d6 to determine the base range of the weapon, this effect lasts until the end of your next turn.<br></p>","effect":"<p>This weapon cannot be used normally, but the frame may attack with it as a free action at the end of its turn. When a ranged or melee attack critically hits the frame, this weapon is destroyed in addition to that attack's normal damage and effects and can only be repaired during a full repair</p>","on_attack":"<p>roll 1d3 to determine damage type<br>1- kinetic<br>2- energy<br>3- explosive</p>","on_hit":"","on_crit":"","mount":"Auxiliary","type":"???","cost":1,"barrage":false,"skirmish":false,"no_attack":true,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"type":"Variable","val":"1d2"}],"range":[{"val":"2d3","type":"Range"}],"sp":"1","tags":[{"id":"tg_accurate","val":"1"}],"actions":[{"name":"Activate Mounted Turret","activation":"Free","detail":"<p>At the end of the turn</p>","cost":0,"pilot":false,"damage":[{"type":"Variable","val":"1d2"}],"range":[{"val":"2d3","type":"Range"}],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Rangefinder","activation":"Protocol","detail":"<p>Roll 2d3 to determine the range of the mounted turret</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"profiles":[]},{"id":"JAKAL_SlayerBlade","name":"Slayer Auto Adjusting Blade","source":"JAKAL","license":"Hrotuka","license_level":1,"description":"","effect":"<p>This weapon counts as Auxiliary, Light, Heavy, and Superheavy for the purpose of talents, mods, and core bonuses</p>","on_attack":"","on_hit":"","on_crit":"","mount":"Heavy","type":"Melee","cost":1,"barrage":true,"skirmish":true,"no_attack":false,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"type":"Kinetic","val":"1d6"}],"range":[{"type":"Threat","val":"1"},{"type":"Burst","val":"1"}],"sp":0,"tags":[],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"profiles":[]},{"id":"JAKAL_Grappler","name":"Grappler Gun","source":"JAKAL","license":"Hrotuka","license_level":2,"description":"<p></p>","effect":"<p>your target is impaled by this weapon’s harpoon-like projectile. Any time after your target takes any action or movement during their next turn, you can reel in the line if your target is your size or smaller they must pass a HULL save or be dragged towards you a number of spaces equal to half your movement by the most direct route possible, if they pass or are bigger than you, as a reaction you may boost towards them, moving toward that target by the most direct route possible. The line snaps if your target teleports.</p>","on_attack":"","on_hit":"","on_crit":"<p>The range of the weapon changes to Line 8 for the attack</p>","mount":"Heavy","type":"Melee","cost":1,"barrage":true,"skirmish":true,"no_attack":false,"no_mods":false,"no_core_bonus":false,"no_bonus":false,"no_synergy":false,"damage":[{"type":"Kinetic","val":"1d6"}],"range":[],"sp":0,"tags":[{"id":"tg_ap"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[],"profiles":[]}]
+[{
+	"id": "Prime",
+	"name": " PRIMARY WEAPON",
+	"source": "JAKAL",
+	"license": "\"Jak of Al Trades\" Multiframe",
+	"license_level": 1,
+	"description": "",
+	"effect": "<p>This weapon can make two attacks at a time; if the frame loses half or more of its Structure, it can only make one attack at a time.</p>",
+	"on_attack": "",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Main",
+	"type": "Launcher",
+	"cost": "1",
+	"barrage": true,
+	"skirmish": true,
+	"no_attack": false,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Variable",
+		"val": "1d3"
+	}],
+	"range": [{
+		"type": "Range",
+		"val": "5"
+	}, {
+		"type": "Threat",
+		"val": "1"
+	}],
+	"sp": "1",
+	"tags": [{
+		"id": "tg_accurate",
+		"val": "2"
+	}, {
+		"id": "tg_unique"
+	}],
+	"actions": [{
+		"name": "Switch Profile",
+		"activation": "Free",
+		"detail": "<p>Switch Profile<br><br></p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}, {
+		"name": "Switch Profile",
+		"activation": "Reaction",
+		"detail": "<p>Switch Profile</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": "<p>Skirmish or Barrage with this weapon and the first attack has been rolled but the second hasn't</p>"
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": [{
+		"name": "Primary Weapon (Launcher/CQB)",
+		"description": "",
+		"effect": "<p>This weapon can make two attacks at a time; if the frame loses half or more of its Structure, it can only make one attack at a time.</p>",
+		"on_attack": "<p>Roll 1d3 to determine damage type</p><p>1- kinetic</p><p>2- energy</p><p>3- explosive</p>",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "CQB",
+		"cost": 1,
+		"damage": [{
+			"type": "Variable",
+			"val": "1d3"
+		}],
+		"range": [{
+			"type": "Range",
+			"val": "5"
+		}, {
+			"type": "Threat",
+			"val": "1"
+		}],
+		"actions": [],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": []
+	}, {
+		"name": "Primary Weapon (Launcher/Melee)",
+		"description": "",
+		"effect": "<p>This weapon can make two attacks at a time; if the frame loses half or more of its Structure, it can only make one attack at a time.</p>",
+		"on_attack": "<p>Roll 1d3 to determine damage type</p><p>1- heat</p><p>2- burn</p><p>3- choose Kinetic, Energy, or Explosive</p>",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "Melee",
+		"cost": 1,
+		"damage": [{
+			"type": "Variable",
+			"val": "1d3"
+		}],
+		"range": [{
+			"type": "Range",
+			"val": "1"
+		}, {
+			"type": "Threat",
+			"val": "1"
+		}],
+		"actions": [],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": []
+	}]
+}, {
+	"id": "AAW",
+	"name": "Anti-Armor Weapon",
+	"source": "JAKAL",
+	"license": "\"Jak of Al Trades\" Multiframe",
+	"license_level": 1,
+	"description": "",
+	"effect": "",
+	"on_attack": "<p>Roll 1d6 to determine damage type</p><p>1- kinetic</p><p>2- energy</p><p>3- explosive</p><p>4- heat</p><p>5- burn</p><p>6- choose</p>",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Heavy",
+	"type": "Rifle",
+	"cost": 1,
+	"barrage": true,
+	"skirmish": true,
+	"no_attack": false,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"val": "1d6",
+		"type": "Variable"
+	}],
+	"range": [{
+		"val": "10",
+		"type": "Range"
+	}],
+	"sp": 0,
+	"tags": [{
+		"id": "tg_accurate",
+		"val": "1"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}, {
+	"id": "JAKAL_CuChulainn",
+	"name": "Cú Chulainn",
+	"source": "JAKAL",
+	"license": "",
+	"license_level": 0,
+	"description": "",
+	"effect": "<p>When printed, choose a damage type (kinetic, energy, explosive)<br>This weapon can not attack normally, you can use it to attack a character with the lock on condition as a free action at the end of your turn</p>",
+	"on_attack": "",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Auxiliary",
+	"type": "Launcher",
+	"cost": 1,
+	"barrage": false,
+	"skirmish": false,
+	"no_attack": false,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"val": "1",
+		"type": "Variable"
+	}],
+	"range": [{
+		"val": "15",
+		"type": "Range"
+	}],
+	"sp": 0,
+	"tags": [{
+		"id": "tg_exotic"
+	}],
+	"actions": [{
+		"name": "Release the Hound",
+		"activation": "Free",
+		"detail": "<p>Attack with the Cú Chulainn</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}, {
+	"id": "JAKAL_ConallCernach",
+	"name": "Conall Cernach",
+	"source": "JAKAL",
+	"license": "",
+	"license_level": 0,
+	"description": "",
+	"effect": "<p>When printed choose a damage type (heat, burn)<br>This weapon can not be used to attack normally, instead you may fire it as protocol</p>",
+	"on_attack": "",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Auxiliary",
+	"type": "Nexus",
+	"cost": 1,
+	"barrage": false,
+	"skirmish": false,
+	"no_attack": true,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Variable",
+		"val": "1"
+	}],
+	"range": [{
+		"type": "Range",
+		"val": "15"
+	}],
+	"sp": 0,
+	"tags": [{
+		"id": "tg_exotic"
+	}],
+	"actions": [{
+		"name": "Victorious Assault",
+		"activation": "Protocol",
+		"detail": "<p>Fire the Conall Cernach</p>",
+		"cost": "0",
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}, {
+		"name": "Deirdre",
+		"activation": "Free",
+		"detail": "<p>Attack with Conall Cernach</p><p>can only be used if Navan Fort is in effect</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}, {
+	"id": "JAKAL_Loegaire",
+	"name": "Lóegaire",
+	"source": "JAKAL",
+	"license": "",
+	"license_level": 0,
+	"description": "",
+	"effect": "<p>This weapon can not attack normally, instead you may attack with it using the Headless reaction</p>",
+	"on_attack": "",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Auxiliary",
+	"type": "CQB",
+	"cost": 1,
+	"barrage": false,
+	"skirmish": false,
+	"no_attack": true,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Kinetic",
+		"val": "1"
+	}],
+	"range": [{
+		"type": "Range",
+		"val": "15"
+	}, {
+		"type": "Threat",
+		"val": "3"
+	}],
+	"sp": 0,
+	"tags": [{
+		"id": "tg_exotic"
+	}],
+	"actions": [{
+		"name": "Headless",
+		"activation": "Reaction",
+		"detail": "<p>Attack with the Lóegaire</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": "<p>An enemy begins or ends a movement in your, or an ally's threat range </p>"
+	}, {
+		"name": "Naoise",
+		"activation": "Free",
+		"detail": "<p>Attack with the Lóegaire<br>Can only be used if Navan Fort is in effect</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}, {
+	"id": "JAKAL_CathbadTracerRifle",
+	"name": "Cathbad Tracer Rifle",
+	"source": "JAKAL",
+	"license": "Emain Macha",
+	"license_level": 1,
+	"description": "",
+	"effect": "<p>The armor piercing effect only applies to hits</p>",
+	"on_attack": "",
+	"on_hit": "<p>Apply lock on to the target</p>",
+	"on_crit": "",
+	"mount": "Auxiliary",
+	"type": "Rifle",
+	"cost": 1,
+	"barrage": true,
+	"skirmish": true,
+	"no_attack": false,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Kinetic",
+		"val": "1"
+	}],
+	"range": [{
+		"type": "Range",
+		"val": "15"
+	}],
+	"sp": 0,
+	"tags": [{
+		"id": "tg_reliable",
+		"val": "1"
+	}, {
+		"id": "tg_ap"
+	}, {
+		"id": "tg_unique"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}, {
+	"id": "JAKAL_FergusCannon",
+	"name": "Fergus Cannon",
+	"source": "JAKAL",
+	"license": "Emain Macha",
+	"license_level": 2,
+	"description": "",
+	"effect": "",
+	"on_attack": "",
+	"on_hit": "<p>Apply scan to target</p>",
+	"on_crit": "<p>Remove Hidden and Invisible from target until the start of their next turn or the effect giving it to them ends (whichever happens first)</p>",
+	"mount": "Auxiliary",
+	"type": "Cannon",
+	"cost": 1,
+	"barrage": true,
+	"skirmish": true,
+	"no_attack": false,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Energy",
+		"val": "2"
+	}],
+	"range": [{
+		"type": "Range",
+		"val": "15"
+	}],
+	"sp": 0,
+	"tags": [{
+		"id": "tg_unique"
+	}, {
+		"id": "tg_accurate",
+		"val": "1"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}, {
+	"id": "JAKAL_LeabharchamQuill",
+	"name": "Leabharcham's quill",
+	"source": "JAKAL",
+	"license": "Emain Macha",
+	"license_level": 3,
+	"description": "",
+	"effect": "<p>This weapon does not need to be picked up if thrown, instead a new one is printed at the start of your next turn</p><p>if you have the hunter rank 2 talent (Knife Juggler) increase this weapon's thrown range to 15 and the threat increases to 5</p>",
+	"on_attack": "",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Auxiliary",
+	"type": "Melee",
+	"cost": 1,
+	"barrage": true,
+	"skirmish": true,
+	"no_attack": false,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Explosive",
+		"val": "3"
+	}],
+	"range": [{
+		"type": "Threat",
+		"val": "1"
+	}, {
+		"type": "Thrown",
+		"val": "5"
+	}],
+	"sp": 0,
+	"tags": [{
+		"id": "tg_seeking"
+	}, {
+		"id": "tg_smart"
+	}, {
+		"id": "tg_unique"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}, {
+	"id": "JAKAL_Blastpick",
+	"name": "Blast-pick",
+	"source": "JAKAL",
+	"license": "Deepwolf",
+	"license_level": 1,
+	"description": "",
+	"effect": "<p>Progresses through profiles as you charge the attack</p>",
+	"on_attack": "",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Heavy",
+	"type": "Melee",
+	"cost": 1,
+	"barrage": true,
+	"skirmish": true,
+	"no_attack": false,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Kinetic",
+		"val": "1d6"
+	}],
+	"range": [{
+		"type": "Blast",
+		"val": "2"
+	}],
+	"sp": 0,
+	"tags": [],
+	"actions": [{
+		"name": "Crush",
+		"activation": "Reaction",
+		"detail": "<p>Progress to the next profile</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": "<p>Used the Blast-pick's Charge action</p>"
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": [{
+		"name": "Unprepared",
+		"description": "",
+		"effect": "<p>After the attack, switch back to the Unprepared profile</p>",
+		"on_attack": "",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "Melee",
+		"cost": 1,
+		"damage": [{
+			"val": "1d6",
+			"type": "Kinetic"
+		}],
+		"range": [{
+			"type": "Threat",
+			"val": "2"
+		}],
+		"actions": [{
+			"name": "Load Blast-Pick",
+			"activation": "Protocol",
+			"detail": "<p>Switch to the next profile</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [],
+			"range": [],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": [{
+			"id": "tg_inaccurate",
+			"val": "1"
+		}]
+	}, {
+		"name": "Loaded",
+		"description": "",
+		"effect": "<p>After the attack, switch back to the Unprepared profile</p>",
+		"on_attack": "",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "Melee",
+		"cost": 1,
+		"damage": [{
+			"val": "1d6+3",
+			"type": "Explosive"
+		}],
+		"range": [{
+			"type": "Threat",
+			"val": "2"
+		}],
+		"actions": [{
+			"name": "Charge",
+			"activation": "Quick",
+			"detail": "<p>Progress to the next profile</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [],
+			"range": [],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": []
+	}, {
+		"name": "Locked",
+		"description": "",
+		"effect": "<p>After the attack, switch back to the Unprepared profile</p>",
+		"on_attack": "",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "Melee",
+		"cost": 1,
+		"damage": [{
+			"type": "Explosive",
+			"val": "2d6"
+		}],
+		"range": [{
+			"type": "Threat",
+			"val": "2"
+		}],
+		"actions": [{
+			"name": "Charge",
+			"activation": "Quick",
+			"detail": "<p>Progress to the next profile</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [],
+			"range": [],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": []
+	}, {
+		"name": "Charged",
+		"description": "",
+		"effect": "<p>After the attack, switch back to the Unprepared profile</p>",
+		"on_attack": "",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "",
+		"cost": 1,
+		"damage": [{
+			"type": "Explosive",
+			"val": "2d6"
+		}],
+		"range": [{
+			"type": "Threat",
+			"val": "2"
+		}],
+		"actions": [{
+			"name": "Charge",
+			"activation": "Quick",
+			"detail": "<p>Progress to the next profile</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [],
+			"range": [],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": [{
+			"id": "tg_ap",
+			"val": "0"
+		}]
+	}, {
+		"name": "Blast",
+		"description": "",
+		"effect": "<p>After the attack, switch back to the Unprepared profile</p>",
+		"on_attack": "",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "",
+		"cost": 1,
+		"damage": [{
+			"type": "Explosive",
+			"val": "2d6+3"
+		}, {
+			"type": "Burn",
+			"val": "1"
+		}],
+		"range": [{
+			"type": "Threat",
+			"val": "3"
+		}],
+		"actions": [],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": [{
+			"id": "tg_ap",
+			"val": ""
+		}, {
+			"id": "tg_reliable",
+			"val": "4"
+		}]
+	}]
+}, {
+	"id": "JAKAL_LegacyFortificationSystem",
+	"name": "JAKAL Legacy Fortification System",
+	"source": "JAKAL",
+	"license": "",
+	"license_level": 0,
+	"description": "",
+	"effect": "<p>Has to be deployed to be used</p>",
+	"on_attack": "",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Superheavy",
+	"type": "???",
+	"cost": 1,
+	"barrage": true,
+	"skirmish": true,
+	"no_attack": true,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [],
+	"range": [],
+	"sp": "1",
+	"tags": [{
+		"id": "JAKAL_Fortification"
+	}],
+	"actions": [{
+		"name": "Deploy Fortification",
+		"activation": "Quick",
+		"detail": "<p>Deploy</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [{
+			"type": "Range",
+			"val": "1"
+		}],
+		"synergy_locations": ["deployable", "quick_activation"],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}, {
+		"name": "Switch Profile",
+		"activation": "Free",
+		"detail": "<p>Switch Profile</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [{
+		"name": "JakAl Legacy Fortification System",
+		"type": "Fortification",
+		"detail": "<p>JakAl Legacy Fortification System<br>Provides hard cover.</p>",
+		"size": 1,
+		"activation": "",
+		"deactivation": "",
+		"recall": "",
+		"redeploy": "",
+		"instances": 1,
+		"cost": 1,
+		"armor": "1",
+		"hp": "10",
+		"evasion": "5",
+		"edef": "",
+		"heatcap": "",
+		"repcap": "",
+		"sensor_range": "",
+		"tech_attack": "",
+		"save": "",
+		"speed": "",
+		"pilot": false,
+		"mech": false,
+		"actions": [],
+		"bonuses": [],
+		"synergies": [],
+		"counters": []
+	}],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": [{
+		"name": "Cupola (Rifle)",
+		"description": "",
+		"effect": "",
+		"on_attack": "",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "Rifle",
+		"cost": 1,
+		"damage": [{
+			"type": "Energy",
+			"val": "1d6"
+		}],
+		"range": [{
+			"val": "15",
+			"type": "Range"
+		}],
+		"actions": [],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": [{
+			"id": "tg_reliable",
+			"val": "1"
+		}]
+	}, {
+		"name": "Turret (Cannon)",
+		"description": "",
+		"effect": "",
+		"on_attack": "",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "Cannon",
+		"cost": 1,
+		"damage": [{
+			"type": "Explosive",
+			"val": "2d3"
+		}],
+		"range": [{
+			"type": "Range",
+			"val": "12"
+		}, {
+			"type": "Blast",
+			"val": "1"
+		}],
+		"actions": [],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": []
+	}, {
+		"name": "Barbette (Launcher)",
+		"description": "",
+		"effect": "",
+		"on_attack": "",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "Launcher",
+		"cost": 1,
+		"damage": [{
+			"type": "Kinetic",
+			"val": "1d3+3"
+		}],
+		"range": [{
+			"type": "Range",
+			"val": "10"
+		}],
+		"actions": [],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": [{
+			"id": "tg_arcing"
+		}]
+	}, {
+		"name": "Artillery (Nexus)",
+		"description": "",
+		"effect": "<p>Roll 1d6 to determine damage type-</p><p>1- Kinetic</p><p>2- Energy</p><p>3- Explosive</p><p>4- Heat</p><p>5- Burn</p><p>6- Choose (Kinetic, Energy, or Explosive)</p>",
+		"on_attack": "",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "Nexus",
+		"cost": 1,
+		"damage": [{
+			"val": "1d3",
+			"type": "Variable"
+		}],
+		"range": [{
+			"type": "Line",
+			"val": "7"
+		}],
+		"actions": [],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": [{
+			"id": "tg_seeking"
+		}, {
+			"id": "tg_smart"
+		}]
+	}, {
+		"name": "Flamethrowers (CQB)",
+		"description": "",
+		"effect": "",
+		"on_attack": "",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "CQB",
+		"cost": 1,
+		"damage": [{
+			"val": "2",
+			"type": "Heat"
+		}],
+		"range": [{
+			"type": "Threat",
+			"val": "3"
+		}, {
+			"type": "Cone",
+			"val": "5"
+		}],
+		"actions": [],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": []
+	}, {
+		"name": "Defensive Construction (Melee)",
+		"description": "",
+		"effect": "",
+		"on_attack": "",
+		"on_hit": "",
+		"on_crit": "",
+		"type": "Melee",
+		"cost": 1,
+		"damage": [{
+			"type": "Burn",
+			"val": "1"
+		}],
+		"range": [{
+			"type": "Threat",
+			"val": "2"
+		}],
+		"actions": [],
+		"bonuses": [],
+		"synergies": [],
+		"deployables": [],
+		"counters": [],
+		"integrated": [],
+		"special_equipment": [],
+		"tags": []
+	}]
+}, {
+	"id": "JAKAL_WolfhoundShotgun",
+	"name": "Wolfhound Shotgun",
+	"source": "JAKAL",
+	"license": "Deepwolf",
+	"license_level": 2,
+	"description": "<p></p>",
+	"effect": "<p>You can fire one or both barrels, firing both barrels means the weapon has to be reloaded after one shot instead of two.</p><p>Firing both barrels can only be done if the Wolfhound has not fired since the last time it was reloaded, firing it this way increases its damage to 4d6 and its Knockback to 4.</p><p>When this weapon is reloaded, you may choose to deal 4 Kinetic Damage to an adjacent character from the force of the ejecting shells.</p>",
+	"on_attack": "",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Heavy",
+	"type": "CQB",
+	"cost": "3",
+	"barrage": true,
+	"skirmish": true,
+	"no_attack": false,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Kinetic",
+		"val": "2d6"
+	}],
+	"range": [{
+		"type": "Range",
+		"val": "3"
+	}, {
+		"type": "Thrown",
+		"val": "3"
+	}],
+	"sp": 0,
+	"tags": [{
+		"id": "tg_loading",
+		"val": "2"
+	}, {
+		"id": "tg_knockback",
+		"val": "2"
+	}, {
+		"id": "tg_inaccurate"
+	}, {
+		"id": "tg_drone"
+	}, {
+		"id": "tg_deployable"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [{
+		"name": "JAKAL_WolfhoundDrone",
+		"type": "Wolfhound Drone",
+		"detail": "<p>The Wolfhound Shotgun can be deployed to a free space within Sensors and line of sight as a free action, where it becomes a Drone. Once deployed, you may still use it for Skirmish and Barrage attacks as though it is still a weapon, but with line of sight and Range traced from its location.<br>You may recall or redeploy the Wolfhound Drone as a quick action. Until recalled or destroyed, it remains deployed until the end of the scene. If destroyed, it follows the rules for destroyed Drones and can’t be used until repaired.</p>",
+		"size": 1,
+		"activation": "",
+		"deactivation": "",
+		"recall": "",
+		"redeploy": "",
+		"instances": 1,
+		"cost": 1,
+		"armor": "1",
+		"hp": "8",
+		"evasion": "7",
+		"edef": "7",
+		"heatcap": "3",
+		"repcap": "",
+		"sensor_range": "",
+		"tech_attack": "",
+		"save": "",
+		"speed": "5",
+		"pilot": false,
+		"mech": false,
+		"actions": [],
+		"bonuses": [],
+		"synergies": [],
+		"counters": []
+	}],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}, {
+	"id": "JAKAL_MT",
+	"name": " Mounted Turret",
+	"source": "JAKAL",
+	"license": "\"Jak of Al Trades\" Multiframe",
+	"license_level": 1,
+	"description": "<p>As a protocol you may roll 1d6 to determine the base range of the weapon, this effect lasts until the end of your next turn.<br></p>",
+	"effect": "<p>This weapon cannot be used normally, but the frame may attack with it as a free action at the end of its turn. When a ranged or melee attack critically hits the frame, this weapon is destroyed in addition to that attack's normal damage and effects and can only be repaired during a full repair</p>",
+	"on_attack": "<p>roll 1d3 to determine damage type<br>1- kinetic<br>2- energy<br>3- explosive</p>",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Auxiliary",
+	"type": "???",
+	"cost": 1,
+	"barrage": false,
+	"skirmish": false,
+	"no_attack": true,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Variable",
+		"val": "1d2"
+	}],
+	"range": [{
+		"val": "2d3",
+		"type": "Range"
+	}],
+	"sp": "1",
+	"tags": [{
+		"id": "tg_accurate",
+		"val": "1"
+	}],
+	"actions": [{
+		"name": "Activate Mounted Turret",
+		"activation": "Free",
+		"detail": "<p>At the end of the turn</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [{
+			"type": "Variable",
+			"val": "1d2"
+		}],
+		"range": [{
+			"val": "2d3",
+			"type": "Range"
+		}],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}, {
+		"name": "Rangefinder",
+		"activation": "Protocol",
+		"detail": "<p>Roll 2d3 to determine the range of the mounted turret</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}, {
+	"id": "JAKAL_SlayerBlade",
+	"name": "Slayer Auto Adjusting Blade",
+	"source": "JAKAL",
+	"license": "Hrotuka",
+	"license_level": 1,
+	"description": "",
+	"effect": "<p>This weapon counts as Auxiliary, Light, Heavy, and Superheavy for the purpose of talents, mods, and core bonuses</p>",
+	"on_attack": "",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Heavy",
+	"type": "Melee",
+	"cost": 1,
+	"barrage": true,
+	"skirmish": true,
+	"no_attack": false,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Kinetic",
+		"val": "1d6"
+	}],
+	"range": [{
+		"type": "Threat",
+		"val": "1"
+	}, {
+		"type": "Burst",
+		"val": "1"
+	}],
+	"sp": 0,
+	"tags": [],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}, {
+	"id": "JAKAL_Grappler",
+	"name": "Grappler Gun",
+	"source": "JAKAL",
+	"license": "Hrotuka",
+	"license_level": 2,
+	"description": "<p></p>",
+	"effect": "<p>your target is impaled by this weapon’s harpoon-like projectile. Any time after your target takes any action or movement during their next turn, you can reel in the line if your target is your size or smaller they must pass a HULL save or be dragged towards you a number of spaces equal to half your movement by the most direct route possible, if they pass or are bigger than you, as a reaction you may boost towards them, moving toward that target by the most direct route possible. The line snaps if your target teleports.</p>",
+	"on_attack": "",
+	"on_hit": "",
+	"on_crit": "<p>The range of the weapon changes to Line 8 for the attack</p>",
+	"mount": "Heavy",
+	"type": "Melee",
+	"cost": 1,
+	"barrage": true,
+	"skirmish": true,
+	"no_attack": false,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Kinetic",
+		"val": "1d6"
+	}],
+	"range": [],
+	"sp": 0,
+	"tags": [{
+		"id": "tg_ap"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}]
