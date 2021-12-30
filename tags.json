@@ -1,1 +1,5 @@
-[{"id":"JAKAL_Fortification","name":"FORTIFICATION","description":"<p>This system or weapon can be deployed, it can be used or fired by any character adjacent or sharing spaces with it (or automated via mods and systems such as the UNCLE/CLASS Comp-Con)</p>"}]
+[{
+	"id": "JAKAL_Fortification",
+	"name": "FORTIFICATION",
+	"description": "<p>This system or weapon can be deployed, it can be used or fired by any character adjacent or sharing spaces with it (or automated via mods and systems such as the UNCLE/CLASS Comp-Con)</p>"
+}]
