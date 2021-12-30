@@ -1,1 +1,362 @@
-[{"id":"JAKAL_FlashprinterModule","name":"Flashprinter Module","source":"JAKAL","license":"","license_level":0,"effect":"<p>The first time this system is used in a scene you do not need to roll to activate its effect</p><p>If a drone, deployable, or fortification that does not have the limited tag gets destroyed, mark the location of its wreck<br>If you are within threat 1 of any part of the destroyed deployable you may you can spend one repair restore it to full health as a quick action and redeploy it as a free action<br>Each Deployable/Drone may only be repaired once in this fashion</p><p>Each time the rebuild action is take the next recharge roll for this system gains a cumulative -1 penalty for the rest of the scene (unless you somehow find enough raw resources)</p>","type":"System","sp":"","description":"","tags":[{"id":"tg_exotic"},{"id":"tg_unique"},{"id":"tg_recharge","val":"2"}],"actions":[{"name":"Rebuild","activation":"Quick","detail":"<p>Recharge 2+: use one repair to restore the destroyed deployable/drone to full health</p>","cost":"0","pilot":false,"damage":[],"range":[{"type":"Threat","val":"1"}],"synergy_locations":["deployable","drone"],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Recovery","activation":"Free","detail":"<p>You may redeploy the drone or deployable that was repaired with Rebuild as a free action (ONLY if performed immediately after Rebuild), otherwise you may redeploy it as normal</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":["deployable"],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[{"locations":["deployable"],"detail":"<p>Rebuild</p>","weapon_types":[],"weapon_sizes":[],"system_types":["Deployable"]}],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_PackhoundDrone","name":"Packhound Drone","source":"JAKAL","license":"Deepwolf","license_level":2,"effect":"","type":"System","sp":"3","description":"","tags":[{"id":"tg_deployable"},{"id":"tg_drone"}],"actions":[{"name":"Release The Hound","activation":"Quick","detail":"<p>Deploy the Packhound Drone</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[{"name":"Packhound Drone","type":"Drone","detail":"<p>The drone acts independently and immediately after the controller<br>It has the following actions available to it (aside from the default):</p><p>Protocol<br>1x Quick action<br>Reaction<br>Overcharge</p>","size":1,"activation":"Quick","deactivation":"","recall":"Quick","redeploy":"","instances":1,"cost":1,"armor":"1","hp":"8","evasion":"7","edef":"7","heatcap":"3","repcap":"","sensor_range":"","tech_attack":"","save":"","speed":"5","pilot":false,"mech":true,"actions":[{"name":"Lunge","activation":"Quick","detail":"<p>Make a melee attack at +2 against an adjacent character. On hit, they take 1d6 Kinetic damage and become Grappled by the drone, which has a Hull score of 2.</p>","cost":0,"pilot":false,"damage":[{"type":"Kinetic","val":"1d6"}],"range":[{"type":"Range","val":"1"}],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Maim","activation":"Quick","detail":"<p>A character grappled by the drone takes 1d3+1 AP Kinetic damage and becomes Jammed and Impaired until they escape the grapple.</p>","cost":0,"pilot":false,"damage":[{"type":"Kinetic","val":"1d6"}],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Reload Toss","activation":"Reaction","detail":"<p>when near the wolfhound drone, the range of its reload damage includes adjacency to the packhound</p><p>this also applies to the IPS-N HHS-155 CANNIBAL</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"<p>The Packhound drone is adjacent to a Wolfhound drone or someone using an IPS-N HHS-155 CANNIBAL</p>","trigger":"<p>The Wolfhound shotgun or IPS-N HHS-155 CANNIBAL is reloaded</p>"}],"bonuses":[],"synergies":[],"counters":[]}],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_LinkedTargeting","name":"Linked Targeting System","source":"JAKAL","license":"Deepwolf","license_level":3,"effect":"<p>Allows active fortifications to calculate their range from the location of your frame, or from the location of your drones and deployables<br>when firing from any position that is not it's original position, the shot is treated as arcing</p>","type":"System","sp":"1","description":"","tags":[{"id":"tg_unique"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_DagonNHP","name":"DAGON-CLASS NHP","source":"JAKAL","license":"Deepwolf","license_level":3,"effect":"<p>Favour of the depths (Recharge 5+):</p><p><code>Once per round when you would take stress or structure damage roll 1d6-<br>on a 6 ignore that damage and return to the appropriate cap a recharge roll is only required if this was performed successfully</code></p><p>When this NHP cascades you may choose to take the Sacrifice reaction to end it<br>When cascading the passive still functions but the recharge cost becomes 6+</p>","type":"AI","sp":"4","description":"","tags":[{"id":"tg_recharge","val":"4"},{"id":"tg_limited","val":"1"},{"id":"tg_unique"}],"actions":[{"name":"Blessings of the deep","activation":"Full Tech","detail":"<p>Lower your overcharge cost by one step</p>","cost":"1","pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Sacrifice","activation":"Reaction","detail":"<p>Get out and rodeo the frame taking one structure damage or one reactor stress to immediately end the cascade</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":"<p>The Dagon-Class NHP enters cascade</p>"}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_MultiframeTargeting","name":"Linked Targeting System","source":"JAKAL","license":"Jak Specialty","license_level":1,"effect":"<p>Allows active allied fortifications to calculate their range from the location of your frame, or from the location of your drones and deployables<br>when firing from any position that is not it's original position, the shot is treated as arcing</p>","type":"System","sp":"","description":"","tags":[{"id":"tg_unique"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_Packmate_Drone","name":"Packmate Drone","source":"JAKAL","license":"Jak Specialty","license_level":1,"effect":"<p>The drone acts independently and immediately after the controller<br>It has the following actions available to it (aside from the default):</p><p>Protocol<br>1x Quick action<br>Reaction<br>Overcharge</p><p>The Packmate drone can be used as hard cover</p>","type":"System","sp":"","description":"","tags":[{"id":"tg_deployable"},{"id":"tg_drone"},{"id":"JAKAL_Fortification"}],"actions":[{"name":"Release The Hound","activation":"Quick","detail":"<p>Deploy the Packhound Drone</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[{"name":"Packmate Drone","type":"Drone","detail":"<p>The drone acts independently and immediately after the controller<br>It has the following actions available to it (aside from the default):</p><p>Protocol<br>1x Quick action<br>Reaction<br>Overcharge</p><p>The Packmate Drone is considered hard cover for adjacent allies (or allies sharing space with it)</p>","size":1,"activation":"Quick","deactivation":"","recall":"","redeploy":"","instances":1,"cost":1,"armor":"1","hp":"8","evasion":"7","edef":"7","heatcap":"3","repcap":"","sensor_range":"","tech_attack":"","save":"","speed":"5","pilot":false,"mech":false,"actions":[{"name":"Lunge","activation":"Quick","detail":"<p>Make a melee attack at +1 accuracy against an adjacent character. On hit, they take 1d6 Kinetic damage and become Grappled by the drone, which has a Hull score of 1.</p>","cost":0,"pilot":false,"damage":[{"type":"Kinetic","val":"1d6"}],"range":[{"type":"Burst","val":"1"}],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Maim","activation":"Quick","detail":"<p>A character grappled by the drone takes 1d3+1 AP Kinetic damage and becomes Jammed and Impaired until they escape the grapple.</p>","cost":0,"pilot":false,"damage":[{"type":"Kinetic","val":"1d3+1"}],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"counters":[]}],"counters":[],"integrated":[],"special_equipment":[]}]
+[{
+	"id": "JAKAL_FlashprinterModule",
+	"name": "Flashprinter Module",
+	"source": "JAKAL",
+	"license": "",
+	"license_level": 0,
+	"effect": "<p>The first time this system is used in a scene you do not need to roll to activate its effect</p><p>If a drone, deployable, or fortification that does not have the limited tag gets destroyed, mark the location of its wreck<br>If you are within threat 1 of any part of the destroyed deployable you may you can spend one repair restore it to full health as a quick action and redeploy it as a free action<br>Each Deployable/Drone may only be repaired once in this fashion</p><p>Each time the rebuild action is take the next recharge roll for this system gains a cumulative -1 penalty for the rest of the scene (unless you somehow find enough raw resources)</p>",
+	"type": "System",
+	"sp": "",
+	"description": "",
+	"tags": [{
+		"id": "tg_exotic"
+	}, {
+		"id": "tg_unique"
+	}, {
+		"id": "tg_recharge",
+		"val": "2"
+	}],
+	"actions": [{
+		"name": "Rebuild",
+		"activation": "Quick",
+		"detail": "<p>Recharge 2+: use one repair to restore the destroyed deployable/drone to full health</p>",
+		"cost": "0",
+		"pilot": false,
+		"damage": [],
+		"range": [{
+			"type": "Threat",
+			"val": "1"
+		}],
+		"synergy_locations": ["deployable", "drone"],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}, {
+		"name": "Recovery",
+		"activation": "Free",
+		"detail": "<p>You may redeploy the drone or deployable that was repaired with Rebuild as a free action (ONLY if performed immediately after Rebuild), otherwise you may redeploy it as normal</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": ["deployable"],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [{
+		"locations": ["deployable"],
+		"detail": "<p>Rebuild</p>",
+		"weapon_types": [],
+		"weapon_sizes": [],
+		"system_types": ["Deployable"]
+	}],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_PackhoundDrone",
+	"name": "Packhound Drone",
+	"source": "JAKAL",
+	"license": "Deepwolf",
+	"license_level": 2,
+	"effect": "",
+	"type": "System",
+	"sp": "3",
+	"description": "",
+	"tags": [{
+		"id": "tg_deployable"
+	}, {
+		"id": "tg_drone"
+	}],
+	"actions": [{
+		"name": "Release The Hound",
+		"activation": "Quick",
+		"detail": "<p>Deploy the Packhound Drone</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [{
+		"name": "Packhound Drone",
+		"type": "Drone",
+		"detail": "<p>The drone acts independently and immediately after the controller<br>It has the following actions available to it (aside from the default):</p><p>Protocol<br>1x Quick action<br>Reaction<br>Overcharge</p>",
+		"size": 1,
+		"activation": "Quick",
+		"deactivation": "",
+		"recall": "Quick",
+		"redeploy": "",
+		"instances": 1,
+		"cost": 1,
+		"armor": "1",
+		"hp": "8",
+		"evasion": "7",
+		"edef": "7",
+		"heatcap": "3",
+		"repcap": "",
+		"sensor_range": "",
+		"tech_attack": "",
+		"save": "",
+		"speed": "5",
+		"pilot": false,
+		"mech": true,
+		"actions": [{
+			"name": "Lunge",
+			"activation": "Quick",
+			"detail": "<p>Make a melee attack at +2 against an adjacent character. On hit, they take 1d6 Kinetic damage and become Grappled by the drone, which has a Hull score of 2.</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [{
+				"type": "Kinetic",
+				"val": "1d6"
+			}],
+			"range": [{
+				"type": "Range",
+				"val": "1"
+			}],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}, {
+			"name": "Maim",
+			"activation": "Quick",
+			"detail": "<p>A character grappled by the drone takes 1d3+1 AP Kinetic damage and becomes Jammed and Impaired until they escape the grapple.</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [{
+				"type": "Kinetic",
+				"val": "1d6"
+			}],
+			"range": [],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}, {
+			"name": "Reload Toss",
+			"activation": "Reaction",
+			"detail": "<p>when near the wolfhound drone, the range of its reload damage includes adjacency to the packhound</p><p>this also applies to the IPS-N HHS-155 CANNIBAL</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [],
+			"range": [],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "<p>The Packhound drone is adjacent to a Wolfhound drone or someone using an IPS-N HHS-155 CANNIBAL</p>",
+			"trigger": "<p>The Wolfhound shotgun or IPS-N HHS-155 CANNIBAL is reloaded</p>"
+		}],
+		"bonuses": [],
+		"synergies": [],
+		"counters": []
+	}],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_LinkedTargeting",
+	"name": "Linked Targeting System",
+	"source": "JAKAL",
+	"license": "Deepwolf",
+	"license_level": 3,
+	"effect": "<p>Allows active fortifications to calculate their range from the location of your frame, or from the location of your drones and deployables<br>when firing from any position that is not it's original position, the shot is treated as arcing</p>",
+	"type": "System",
+	"sp": "1",
+	"description": "",
+	"tags": [{
+		"id": "tg_unique"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_DagonNHP",
+	"name": "DAGON-CLASS NHP",
+	"source": "JAKAL",
+	"license": "Deepwolf",
+	"license_level": 3,
+	"effect": "<p>Favour of the depths (Recharge 5+):</p><p><code>Once per round when you would take stress or structure damage roll 1d6-<br>on a 6 ignore that damage and return to the appropriate cap a recharge roll is only required if this was performed successfully</code></p><p>When this NHP cascades you may choose to take the Sacrifice reaction to end it<br>When cascading the passive still functions but the recharge cost becomes 6+</p>",
+	"type": "AI",
+	"sp": "4",
+	"description": "",
+	"tags": [{
+		"id": "tg_recharge",
+		"val": "4"
+	}, {
+		"id": "tg_limited",
+		"val": "1"
+	}, {
+		"id": "tg_unique"
+	}],
+	"actions": [{
+		"name": "Blessings of the deep",
+		"activation": "Full Tech",
+		"detail": "<p>Lower your overcharge cost by one step</p>",
+		"cost": "1",
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}, {
+		"name": "Sacrifice",
+		"activation": "Reaction",
+		"detail": "<p>Get out and rodeo the frame taking one structure damage or one reactor stress to immediately end the cascade</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": "<p>The Dagon-Class NHP enters cascade</p>"
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_MultiframeTargeting",
+	"name": "Linked Targeting System",
+	"source": "JAKAL",
+	"license": "Jak Specialty",
+	"license_level": 1,
+	"effect": "<p>Allows active allied fortifications to calculate their range from the location of your frame, or from the location of your drones and deployables<br>when firing from any position that is not it's original position, the shot is treated as arcing</p>",
+	"type": "System",
+	"sp": "",
+	"description": "",
+	"tags": [{
+		"id": "tg_unique"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_Packmate_Drone",
+	"name": "Packmate Drone",
+	"source": "JAKAL",
+	"license": "Jak Specialty",
+	"license_level": 1,
+	"effect": "<p>The drone acts independently and immediately after the controller<br>It has the following actions available to it (aside from the default):</p><p>Protocol<br>1x Quick action<br>Reaction<br>Overcharge</p><p>The Packmate drone can be used as hard cover</p>",
+	"type": "System",
+	"sp": "",
+	"description": "",
+	"tags": [{
+		"id": "tg_deployable"
+	}, {
+		"id": "tg_drone"
+	}, {
+		"id": "JAKAL_Fortification"
+	}],
+	"actions": [{
+		"name": "Release The Hound",
+		"activation": "Quick",
+		"detail": "<p>Deploy the Packhound Drone</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [{
+		"name": "Packmate Drone",
+		"type": "Drone",
+		"detail": "<p>The drone acts independently and immediately after the controller<br>It has the following actions available to it (aside from the default):</p><p>Protocol<br>1x Quick action<br>Reaction<br>Overcharge</p><p>The Packmate Drone is considered hard cover for adjacent allies (or allies sharing space with it)</p>",
+		"size": 1,
+		"activation": "Quick",
+		"deactivation": "",
+		"recall": "",
+		"redeploy": "",
+		"instances": 1,
+		"cost": 1,
+		"armor": "1",
+		"hp": "8",
+		"evasion": "7",
+		"edef": "7",
+		"heatcap": "3",
+		"repcap": "",
+		"sensor_range": "",
+		"tech_attack": "",
+		"save": "",
+		"speed": "5",
+		"pilot": false,
+		"mech": false,
+		"actions": [{
+			"name": "Lunge",
+			"activation": "Quick",
+			"detail": "<p>Make a melee attack at +1 accuracy against an adjacent character. On hit, they take 1d6 Kinetic damage and become Grappled by the drone, which has a Hull score of 1.</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [{
+				"type": "Kinetic",
+				"val": "1d6"
+			}],
+			"range": [{
+				"type": "Burst",
+				"val": "1"
+			}],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}, {
+			"name": "Maim",
+			"activation": "Quick",
+			"detail": "<p>A character grappled by the drone takes 1d3+1 AP Kinetic damage and becomes Jammed and Impaired until they escape the grapple.</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [{
+				"type": "Kinetic",
+				"val": "1d3+1"
+			}],
+			"range": [],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}],
+		"bonuses": [],
+		"synergies": [],
+		"counters": []
+	}],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}]
