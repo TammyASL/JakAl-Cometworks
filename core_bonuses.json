@@ -1,1 +1,38 @@
-[{"id":"cb_maximal_retrofitting","name":"Maximal Retrofitting","source":"JAKAL","effect":"<p>Allows a Flex, Main, Aux, or Aux/Aux mount to be linked to a Heavy mount<br>whenever the Heavy mount is used as part of an attack, the linked mount may be used as part of the attack as well at +2 difficulty<br>(mark that mount manually, comp/con does not support applying a core bonus to two mounts)<br></p>","description":"<p></p>","mounted_effect":"This mount is linked to a Heavy mount whenever that heavy mount is used as part of an attack, the linked mount may be used as part of the attack as well at +2 difficulty","actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"cb_jakal_flashprinter_module","name":"Flashprinter Module","source":"JAKAL","effect":"<p>Gain the Flashprinter Module System</p>","description":"<p>By replacing mounts and deployables with flashprinter systems we can potentially allow for distributed deployment, given the right resources</p>","mounted_effect":"","actions":[],"bonuses":[{"id":"deployable_charges","val":"1","damage_types":[],"range_types":[],"weapon_types":[],"weapon_sizes":[],"overwrite":false,"replace":false}],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":["JAKAL_FlashprinterModule"]}]
+[{
+	"id": "cb_maximal_retrofitting",
+	"name": "Maximal Retrofitting",
+	"source": "JAKAL",
+	"effect": "<p>Allows a Flex, Main, Aux, or Aux/Aux mount to be linked to a Heavy mount<br>whenever the Heavy mount is used as part of an attack, the linked mount may be used as part of the attack as well at +2 difficulty<br>(mark that mount manually, comp/con does not support applying a core bonus to two mounts)<br></p>",
+	"description": "<p></p>",
+	"mounted_effect": "This mount is linked to a Heavy mount whenever that heavy mount is used as part of an attack, the linked mount may be used as part of the attack as well at +2 difficulty",
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "cb_jakal_flashprinter_module",
+	"name": "Flashprinter Module",
+	"source": "JAKAL",
+	"effect": "<p>Gain the Flashprinter Module System</p>",
+	"description": "<p>By replacing mounts and deployables with flashprinter systems we can potentially allow for distributed deployment, given the right resources</p>",
+	"mounted_effect": "",
+	"actions": [],
+	"bonuses": [{
+		"id": "deployable_charges",
+		"val": "1",
+		"damage_types": [],
+		"range_types": [],
+		"weapon_types": [],
+		"weapon_sizes": [],
+		"overwrite": false,
+		"replace": false
+	}],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": ["JAKAL_FlashprinterModule"]
+}]
