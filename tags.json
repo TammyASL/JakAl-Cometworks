@@ -1,5 +1,1 @@
-[{
-	"id": "JAKAL_Fortification",
-	"name": "FORTIFICATION",
-	"description": "<p>This system or weapon can be deployed, it can be used or fired by any character adjacent or sharing spaces with it (or automated via mods and systems such as the UNCLE/CLASS Comp-Con)</p>"
-}]
+[{"id":"JAKAL_Fortification","name":"FORTIFICATION","description":"<p>This system or weapon can be deployed, it can be used or fired by any character adjacent or sharing spaces with it (or automated via mods and systems such as the UNCLE/CLASS Comp-Con)</p>"},{"id":"tg_loadingval","name":"LOADING {VAL}","description":"<p>This weapon must be reloaded after {VAL} uses. Mechs can reload with Stabilize and some systems.</p>"},{"id":"tg_inaccurateval","name":"INACCURATE {VAL}","description":"<p>Attacks made with this weapon receive +{VAL} Difficulty.</p>"},{"id":"tg_rechargeval","name":"RECHARGE {VAL}+","description":"<p>Once this system or weapon has been used, it can’t be used again until it is recharged. At the start of your turn, roll 1d6: if the result is equal to or greater than {VAL}, the equipment can be used again. Only one roll is required per turn, even if you have multiple Recharge systems or weapons. If you have two Recharge systems with target numbers of 4+ and 5+, a roll of 5 will recharge both.</p>"}]

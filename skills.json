@@ -1,7 +1,1 @@
-[{
-	"name": "Many Handed",
-	"id": "JAKAL_S_ManyHanded",
-	"description": "Many hands make for many uses, use everyone's skills, cooperate. Augments Grit. Only Usable by the squad granted by the field commander talent.",
-	"detail": "<p>Augments grit.<br>Each level only grants +1.<br>Gains one level for every point of grit the pilot leading the squad has.</p>",
-	"family": "cha"
-}]
+[{"name":"Many Handed","id":"JAKAL_S_ManyHanded","description":"Many hands make for many uses, use everyone's skills, cooperate. Augments Grit. Only Usable by the squad granted by the field commander talent.","detail":"<p>Augments grit.<br>Each level only grants +1.<br>Gains one level for every point of grit the pilot leading the squad has.</p>","family":"cha"}]
