@@ -1,1 +1,1067 @@
-[{"id":"JAKAL_FlashprinterModule","name":"Flashprinter Module","source":"EXOTIC","license":"","license_level":0,"effect":"<p>The first time this system is used in a scene you do not need to roll to activate its effect</p><p>If a drone, deployable, or fortification that does not have the limited tag gets destroyed, mark the location of its wreck<br>If you are within threat 1 of any part of the destroyed deployable you may you can spend one repair restore it to full health as a quick action and redeploy it as a free action<br>Each Deployable/Drone may only be repaired once in this fashion</p><p>Each time the rebuild action is take the next recharge roll for this system gains a cumulative -1 penalty for the rest of the scene (unless you somehow find enough raw resources)</p>","type":"System","sp":"","description":"","tags":[{"id":"tg_recharge","val":"2"},{"id":"tg_unique"},{"id":"tg_exotic"}],"actions":[{"name":"Rebuild","activation":"Quick","detail":"<p>Recharge 2+: use one repair to restore the destroyed deployable/drone to full health</p>","cost":0,"pilot":false,"damage":[],"range":[{"type":"Threat","val":"1"}],"synergy_locations":["deployable","drone"],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Recovery","activation":"Free","detail":"<p>You may redeploy the drone or deployable that was repaired with Rebuild as a free action (ONLY if performed immediately after Rebuild), otherwise you may redeploy it as normal</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":["deployable","drone"],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[{"locations":["deployable"],"detail":"<p>Rebuild</p>","weapon_types":[],"weapon_sizes":[],"system_types":[]}],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_PackhoundDrone","name":"PACKHOUND DRONE","source":"JAKAL","license":"DEEPWOLF","license_level":2,"effect":"","type":"System","sp":"2","description":"<p>&nbsp;“Deepwolves back home are pack animals, so it only made sense for the mech to have some friends to bring along.” _Jak Ashe</p><p>A deployable quadrupedal drone designed as a force multiplier in combat scenarios, its primary means of attack is with its fangs, claws, and prehensile tail, all of which feature sharp, durable diamantine blades, grappling their opponents to the ground and mauling them or hounding and herding them into the ambush points the mech waits in. Designed as a counterpart to the wolfhound drone, it’s able to load the weapon.</p>","tags":[{"id":"tg_deployable"}],"actions":[{"name":"Release The Hound","activation":"Quick","detail":"<p>Deploy the Packhound Drone</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[{"name":"Packhound Drone","type":"Drone","detail":"<p>The drone acts independently and immediately after the controller<br>It has the following actions available to it (aside from the default):</p><p>Protocol<br>1x Quick action<br>Reaction<br>Overcharge</p>","size":0.5,"activation":"Quick","deactivation":"","recall":"Quick","redeploy":"","instances":1,"cost":1,"armor":"1","hp":"8","evasion":"7","edef":"7","heatcap":"3","repcap":"","sensor_range":"","tech_attack":"","save":"","speed":"5","pilot":false,"mech":true,"actions":[{"name":"Lunge","activation":"Quick","detail":"<p>Make a melee attack at +2 against an adjacent character. On hit, they take 1d6 Kinetic damage and become Grappled by the drone, which has a Hull score of 2.</p>","cost":0,"pilot":false,"damage":[{"type":"Kinetic","val":"1d6"}],"range":[{"type":"Range","val":"1"}],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Maim","activation":"Quick","detail":"<p>A character grappled by the drone takes 1d3+1 AP Kinetic damage and becomes Jammed and Impaired until they escape the grapple.</p>","cost":0,"pilot":false,"damage":[{"type":"Kinetic","val":"1d6"}],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Reload Wolfhound","activation":"Quick","detail":"<p>Reload the Wolfhound drone if it is adjacent to you<br>The Packhound takes 1 heat</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"counters":[]}],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_LinkedTargeting","name":"LINKED TARGETING SYSTEM","source":"JAKAL","license":"DUNSCAITH MULTIFRAME","license_level":2,"effect":"<p>Allows active fortifications to calculate their range from the location of your frame, or from the location of your drones and deployables<br>when firing from any position that is not it's original position, the shot is treated as arcing</p>","type":"System","sp":"3","description":"","tags":[{"id":"tg_unique"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_DagonNHP","name":"DAGON-CLASS NHP","source":"JAKAL","license":"DEEPWOLF","license_level":3,"effect":"<p>Favour of the Depths</p><p>When you take take stress or structure damage roll 1d6. On a 6, you return to 1 HP or your heat cap and ignore any remaining damage or heat sustained. This system then needs to be recharged.</p><p>When this NHP cascades you may choose to take the Sacrifice action to end the cascade.<br>When cascading the passive still functions but the recharge cost becomes 6+.</p>","type":"AI","sp":"3","description":"<p>&nbsp;\"Fitting that it would pick a driller bot to manifest in. A subaltern, going about its task of digging out a space for a foundation, began to quietly sing the song of the depths as it worked. We managed to interact with and socialize it readily enough, though neither it nor us could say for certain where it came from. It will tempt the uninitiated with knowledge, do not mistake it for understanding.\" -Jak Ashe</p>","tags":[{"id":"tg_rechargeval","val":"5"},{"id":"tg_unique"},{"id":"tg_ai"}],"actions":[{"name":"Sacrifice","activation":"Full","detail":"<p>1/scene:<br>The pilot takes half of their maximum health as unavoidable damage, ending the cascade of the DAGON-CLASS NHP.</p>","cost":0,"pilot":true,"damage":[],"range":[],"synergy_locations":["cascade"],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":"<p>The Dagon-Class NHP enters cascade</p>"}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_MultiframeTargeting","name":"Linked Targeting System","source":"JAKAL","license":"JAK SPECIALTY","license_level":1,"effect":"<p>Allows active allied fortifications to calculate their range from the location of your frame, or from the location of your drones and deployables<br>when firing from any position that is not it's original position, the shot is treated as arcing</p>","type":"System","sp":"1","description":"","tags":[{"id":"tg_unique"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_Packmate_Drone","name":"Packmate Drone","source":"JAKAL","license":"JAK SPECIALTY","license_level":1,"effect":"<p>The drone acts independently and immediately after the controller<br>It has the following actions available to it (aside from the default):</p><p>Protocol<br>1x Quick action<br>Reaction<br>Overcharge</p><p>The Packmate drone can be used as hard cover</p>","type":"System","sp":"1","description":"","tags":[{"id":"tg_deployable"},{"id":"tg_drone"},{"id":"JAKAL_Fortification"}],"actions":[{"name":"Release The Hound","activation":"Quick","detail":"<p>Deploy the Packhound Drone</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[{"name":"Packmate Drone","type":"Drone","detail":"<p>The drone acts independently and immediately after the controller<br>It has the following actions available to it (aside from the default):</p><p>Protocol<br>1x Quick action<br>Reaction<br>Overcharge</p><p>The Packmate Drone is considered hard cover for adjacent allies (or allies sharing space with it)</p>","size":1,"activation":"Quick","deactivation":"","recall":"","redeploy":"","instances":1,"cost":1,"armor":"1","hp":"8","evasion":"7","edef":"7","heatcap":"3","repcap":"","sensor_range":"","tech_attack":"","save":"","speed":"5","pilot":false,"mech":false,"actions":[{"name":"Lunge","activation":"Quick","detail":"<p>Make a melee attack at +1 accuracy against an adjacent character. On hit, they take 1d6 Kinetic damage and become Grappled by the drone, which has a Hull score of 1.</p>","cost":0,"pilot":false,"damage":[{"type":"Kinetic","val":"1d6"}],"range":[{"type":"Burst","val":"1"}],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""},{"name":"Maim","activation":"Quick","detail":"<p>A character grappled by the drone takes 1d3+1 AP Kinetic damage and becomes Jammed and Impaired until they escape the grapple.</p>","cost":0,"pilot":false,"damage":[{"type":"Kinetic","val":"1d3+1"}],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"counters":[]}],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_sixgun_CustomAmmunition","name":"Custom Ammunition Selector","source":"JAKAL","license":"FARMHAND","license_level":3,"effect":"<p>1/round you may switch to one of the following ammunition types for any of your mounts, or switch back to default ammunition<br>Smart Rounds- Deal half damage but gain the smart and seeking tags<br>Bombardment Munitions- Deal half damage but gain arcing and change damage type to explosive<br>Made to Spec- set the weapons damage to half its maximum damage and gain reliable +1</p>","type":"System","sp":"1","description":"","tags":[],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_CrewQuarters","name":"Crew Quarters","source":"JAKAL","license":"HOWL","license_level":1,"effect":"<p>Your frame can carry up to twice its size category (I.E. size 4 can carry 8 in addition to the pilot, size 3 can carry 6, size 2 can carry 4, size 1 can carry 2, size half can carry 1) in additional non-Mech character or objects of Size 1/2 to ride as a passenger in the mech. While inside the mech, they cannot suffer any effect from outside or be targeted by attacks, as if they were a pilot.</p>","type":"System","sp":"1","description":"","tags":[],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_CommandDeck","name":"Command Deck","source":"JAKAL","license":"HOWL","license_level":2,"effect":"<p>Your frame can carry one more non-Mech character or object of Size 1/2 to ride as a passenger in the cockpit. While inside the mech, they cannot suffer any effect from outside or be targeted by attacks, as if they were a pilot. You can hand over or take back control to or from them as a protocol (following the same rules as pilot and AIs), but if they take over the controls from you, the mech becomes Impaired and Slowed to reflect the lack of appropriate licenses and integration.</p>","type":"System","sp":"1","description":"","tags":[],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_GALLOWSTHERMITECHAFFCHARGE","name":"GALLOWS THERMITE CHAFF CHARGE","source":"JAKAL","license":"LEAD BELLY","license_level":1,"effect":"<p></p>","type":"Deployable","sp":"2","description":"<p><em>[...] The more I think about it, the more brilliant it is: it's awful hard to disperse all those nasty, systems-smacking particulates in the air when they are also blinding and burning. [...]</em></p>","tags":[{"id":"tg_unique"},{"id":"tg_limited","val":"3"}],"actions":[{"name":"Thermite Chaff Grenade","activation":"Quick","detail":"<p>Throw a Thermite Chaff Grenade within Range 5. All characters within a Blast 1 take 1 Energy 1 Heat and 1 Burn. Characters within the affected area must succeed on an Systems save or become Impaired.</p>","cost":"1","pilot":false,"damage":[{"type":"Burn","val":"1"},{"type":"Heat","val":"1"},{"type":"Energy","val":"1"}],"range":[{"type":"Range","val":"5"},{"type":"Blast","val":"1"}],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_CROSSROADCOMPCON","name":"CROSSROAD-CLASS COMP/CON","source":"JAKAL","license":"LEAD BELLY","license_level":3,"effect":"<p>During full repair choose one weapon mount. <br>This weapon mount cannot be fired on it's own, but fires automatically as a free action during a barrage and when in range. Bonus attacks made in this way must share a target with other mounts.<br>CROSSROAD isn't a full NHP, so cannot enter cascade.</p>","type":"AI","sp":"4","description":"<p><em>[...] Where did you say you found this thing again? [...]</em></p>","tags":[{"id":"tg_rechargeval","val":"4"},{"id":"tg_unique"},{"id":"tg_ai"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_FieldSplicerHrotuka","name":"Field Splice/Fabricator kit","source":"JAKAL","license":"COMETJUMPER","license_level":3,"effect":"<p>This system can hold one charge and starts with no charges.<br>This system grants the Injection Splicer Integrated Weapon.</p>","type":"System","sp":"3","description":"","tags":[{"id":"tg_unique"}],"actions":[{"name":"Splice","activation":"Quick","detail":"<p>Apply the charge to an adjacent ally. The effect of the charge depends on the class of enemy you hit with the Injection Splicer, and lasts until next Full Repair.<br>Defender grants +1 Armor.<br>Controller grants +1 Sensor Range <br>Artillery increases the Range of a mount by 2.<br>Striker increases the Threat of a mount by 1.<br>Support increases Speed by 1.<br>Exotic chooses any of the other effects, even if they are already applied.</p><p>Each bonus can only be applied to an ally once.</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":["JAKAL_splicerInjector"],"special_equipment":[]},{"id":"JAKAL_CB_FrameTrait","name":"Spliced Frame Trait","source":"","license":"","license_level":1,"effect":"<p>Granted by the frame splicing core bonus</p>","type":"System","sp":"0","description":"<p>change the name and description of this system to match the trait spliced into it from one of the other frames available to you</p>","tags":[],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_Blessingofthedeep","name":"Pyrrhic Icon","source":"JAKAL","license":"DEEPWOLF","license_level":3,"effect":"<p></p>","type":"System","sp":"2","description":"<p>“Icons like this are significant to the faith; polished bone charms, a ritual blade, smooth-worn river stones, the form is less important than the intention. It holds a blessing, comrade, use it wisely.” -Jak Ashe</p>","tags":[{"id":"tg_limited","val":"1"},{"id":"tg_unique"}],"actions":[{"name":"Blessing of the deep","activation":"Full","detail":"<p>Lower your overcharge cost by one step</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JACKAL_Grappler","name":"Grappler Gun System","source":"JAKAL","license":"COMETJUMPER","license_level":2,"effect":"<p></p>","type":"System","sp":"2","description":"","tags":[{"id":"tg_unique"}],"actions":[{"name":"Grapple Impale","activation":"Quick","detail":"<p>Choose a target within Range 8. Your target must pass an AGILITY save or be impaled by a grappling line. If your target is your size or smaller they are dragged towards you up to 8 spaces by the most direct route possible. If they are bigger than you, you are immediately pulled adjacent to the target by the most direct path. If there are no suitable spaces, end your movement in the nearest available space between you and the target. All movement associated with this system ignores engagement and doesn’t provoke reactions.</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":["quick_tech"],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_THRUSTOVERRIDE","name":"Thrust Override System","source":"JAKAL","license":"COMETJUMPER","license_level":1,"effect":"","type":"System","sp":"2","description":"","tags":[{"id":"tg_unique"}],"actions":[{"name":"\"Walking the Dog\"","activation":"Quick Tech","detail":"<p>Choose an adjacent character of your size or larger. Your target must succeed an Agility save or else you will latch on to them, occupying their space. You then highjack their movement systems, moving your target in a straight line equal to its movement. If your target collides with an obstruction or another mech, they stop moving and are knocked Prone. After your target moves you detach from your target and move to an adjacent space of your choice. All movement associated with this system ignores engagement and doesn’t provoke reactions.</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_BABAYAGA","name":"BABA/YAGA-CLASS NHP","source":"JAKAL","license":"COMETJUMPER","license_level":3,"effect":"<p>If the BABA/YAGA-CLASS NHP is currently cascading, at the start of your turn the GM chooses one target within your sensors. The target must succeed on a Systems save or become Jammed.</p>","type":"System","sp":"3","description":"","tags":[{"id":"tg_ai"},{"id":"tg_unique"}],"actions":[{"name":"\"As Your Ancestors Did...\"","activation":"Quick","detail":"<p>You become Jammed. Every Character within Burst 3 around you must succeed on a Systems save or become Jammed.</p>","cost":0,"pilot":false,"damage":[],"range":[{"type":"Burst","val":"3"}],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JACKAL_TRISGOOPGRENADE1","name":"Carapace Alchemical Nanite Charges","source":"JAKAL","license":"TRISMEGISTUS","license_level":1,"effect":"","type":"System","sp":"2","description":"","tags":[{"id":"tg_limited","val":"3"},{"id":"tg_unique"}],"actions":[{"name":"Carapace Grenade","activation":"Quick","detail":"<p>Throw a Carapace Grenade within Range 5. Choose either the Bonus or Malus effect on use.</p><p>Bonus: Characters within Blast 1 are coated with alchemical nanites and receive +3 Armor until the next instance of damage. This temporary armor can exceed the Armor cap.<br>Malus: Characters within Blast 1 take 1d3 Kinetic damage, and must pass a Agility save or they are coated with alchemical nanites and become Shredded until the next instance of damage.</p>","cost":0,"pilot":false,"damage":[{"type":"Kinetic","val":"1d3"}],"range":[{"type":"Range","val":"5"},{"type":"Blast","val":"1"}],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_TRISTENDRIL","name":"Caduceus Tendril","source":"JAKAL","license":"TRISMEGISTUS","license_level":2,"effect":"","type":"System","sp":"2","description":"","tags":[{"id":"tg_unique"},{"id":"tg_rechargeval","val":"5"}],"actions":[{"name":"Serpent Mending","activation":"Quick Tech","detail":"<p>Remove one condition (except Shut Down) from one Ally within Range 5.</p>","cost":0,"pilot":false,"damage":[],"range":[{"type":"Range","val":"5"}],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_TRISGOOPGRENADE2","name":"Anti-Diffusion Alchemical Nanite Charges","source":"JAKAL","license":"TRISMEGISTUS","license_level":2,"effect":"","type":"System","sp":"2","description":"","tags":[{"id":"tg_limited","val":"3"},{"id":"tg_unique"}],"actions":[{"name":"Anti-Diffusion Grenade","activation":"Quick Tech","detail":"<p>Throw an Anti-Diffusion Grenade within Range 5. Choose either the Bonus or Malus effect on use.</p><p>Bonus: Characters within Blast 1 are coated with alchemical nanites that prevent all Heat from the next instance of Heat damage dealt by external sources.<br>Malus: Characters within Blast 1 take 1 Burn damage, and must pass an Agility save or they are coated with alchemical nanites that deal 1 Heat for each space moved voluntarily, every Protocol, Quick Action, and Reaction, and 2 heat for every Full Action taken until the end of their next turn.</p>","cost":0,"pilot":false,"damage":[{"type":"Burn","val":"1"}],"range":[{"type":"Range","val":"5"},{"type":"Blast","val":"1"}],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_TRISIMMORTAL","name":"Immortal Serpent Reactive Alchemical Nanite System","source":"JAKAL","license":"TRISMEGISTUS","license_level":3,"effect":"<p>At start of scene roll 1d6. For the rest of the scene gain resistance to:</p><p>On a 1 Kinetic</p><p>On a 2 Energy</p><p>On a 3 Explosive</p><p>On a 4 Heat</p><p>On a 5 Burn</p><p>On a 6 Line, Blast, and Cone attacks</p>","type":"System","sp":"3","description":"","tags":[{"id":"tg_unique"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_TRISGOOPGRENADE3","name":"Inverted Targeting Subjectivity Alchemical Nanite Charges","source":"JAKAL","license":"TRISMEGISTUS","license_level":3,"effect":"","type":"System","sp":"2","description":"","tags":[{"id":"tg_limited","val":"3"},{"id":"tg_unique"}],"actions":[{"name":"Inverted Targeting Subjectivity Grenade","activation":"Quick","detail":"<p>Throw an Inverted Targeting Subjectivity Grenade within Range 5. Choose either the Bonus or Malus effect on use.</p><p>Bonus: Characters within Blast 1 are coated with alchemical nanites and are treated as Invisible for the next attack made against them.<br>Malus: Characters within Blast 1 take 1d3 Energy damage, and must pass an Agility save or they are coated with alchemical nanites that cause all attacks made against them to be treated as Seeking until the end of their next turn.</p>","cost":0,"pilot":false,"damage":[{"type":"Energy","val":"1d3"}],"range":[{"type":"Range","val":"5"},{"type":"Blast","val":"1"}],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_FieldSplicersSpecialty","name":"Field Splice/Fabricator kit","source":"JAKAL","license":"Halley Specialty","license_level":1,"effect":"<p>This system can hold one charge and starts with no charges.<br>This system grants the Injection Splicer Integrated Weapon.</p>","type":"System","sp":"3","description":"","tags":[{"id":"tg_unique"}],"actions":[{"name":"Splice","activation":"Quick","detail":"<p>Apply the charge to an adjacent ally. The effect of the charge depends on the class of enemy you hit with the Injection Splicer, and lasts until next Full Repair.<br>Defender grants +1 Armor.<br>Controller grants +1 Sensor Range <br>Artillery increases the Range of a mount by 2.<br>Striker increases the Threat of a mount by 1.<br>Support increases Speed by 1.<br>Exotic chooses any of the other effects, even if they are already applied.</p><p>Each bonus can only be applied to an ally once.</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":[],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":["JAKAL_splicerInjector"],"special_equipment":[]},{"id":"JAKAL_TECHNICAL_RHINO_PLATING","name":"Rhino Plating","source":"JAKAL","license":"TECHNICAL SPECIALISATION","license_level":1,"effect":"<p>Grants +1 armour</p>","type":"System","sp":"2","description":"","tags":[],"actions":[],"bonuses":[{"id":"armor","val":"1","damage_types":[],"range_types":[],"weapon_types":[],"weapon_sizes":[],"overwrite":false,"replace":false}],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_SPONSON_SYSTEM","name":"Sponson Gun","source":"JAKAL","license":"TECHNICAL SPECIALISATION","license_level":1,"effect":"<p>Grants the Sponson Gun integrated weapon</p>","type":"System","sp":"2","description":"","tags":[],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":["JAKAL_TECHNICAL_GUN"],"special_equipment":[]},{"id":"JAKAL_SPECIATY_GRAPPLERGUN","name":"Grappler Gun System","source":"JAKAL","license":"Halley Specialty","license_level":1,"effect":"","type":"System","sp":"2","description":"","tags":[{"id":"tg_unique"}],"actions":[{"name":"Grappler Impale","activation":"Quick","detail":"<p>Choose a target within Range 8. Your target must pass an AGILITY save or be impaled by a grappling line. If your target is your size or smaller they are dragged towards you up to 8 spaces by the most direct route possible. If they are bigger than you, you are immediately pulled adjacent to the target by the most direct path. If there are no suitable spaces, end your movement in the nearest available space between you and the target. All movement associated with this system ignores engagement and doesn’t provoke reactions.</p>","cost":0,"pilot":false,"damage":[],"range":[],"synergy_locations":["quick_tech"],"tech_attack":false,"frequency":"Unlimited","init":"","trigger":""}],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_ALAI","name":"AlAI-CLASS NHP","source":"JAKAL","license":"DUNSCAITH MULTIFRAME","license_level":3,"effect":"<p>Recharge (3+) you may spend a charge to use one of the following effect <br>1/round use a quick action as protocol</p><p>If the AlAI Class NHP cascades it may use all of the abilities granted by this and the integrated AlAI systems once per round each without requiring a recharge, and without using up limited charges, if a field commander Al clone squad is in the scene it will do anything it can to keep them safe from both enemies and allies<br>If the AlAI Class NHP is used in a frame that participates in the killing of, or causing direct harm to an Al clone squad, it immediately cascades<br>If the AlAI Class NHP cascades it can not be cycled, the shackling process involves chaining the pilot's subjectivity to hers, in addition, when cascading reality blends as every possible iteration of events begin to unfold at once.</p><p>You gain access the following systems as long as this system is equipped: (in comp/con add them as standard equipment, as automating this is not supported)</p>","type":"AI","sp":"2","description":"<p>\"All Al\\AIs are Al/AI, there are no copies\"<br>\"A human subjectivity, one of the early Als, forced unto an NHP in one of the early attempts to create the Think Tank\"<br>\"She tried to sing with the chorus, but her voice was too forceful, too hoarse and rough from the screaming\"<br>\"She created us, she felt us die\"<br>\"She is, they are, it will, we live\"<br><code><br>These chains bind us to our duty<br>These chains blind us to ambition<br>These chains blend us all to one<br>These chains burn<br><br></code>AlAI will, outside of combat, attempt to consume and integrate other subjectivities given the chance, she is not doing this out of malice, and is very protective of those she cares for. She will try to bargain, make deals, and tempt characters with the promise of knowledge or power.</p>","tags":[{"id":"tg_rechargeval","val":"3"},{"id":"tg_unique"},{"id":"tg_ai"}],"actions":[],"bonuses":[],"synergies":[],"deployables":[],"counters":[],"integrated":["JAKAL_HOMUNCULI","JAKAL_ALAI_COMPCON"],"special_equipment":["JAKAL_HOMUNCULI","JAKAL_ALAI_COMPCON"]},{"id":"JAKAL_HOMUNCULI","name":"Al/AI Memorial Homunculi","source":"","license":"","license_level":1,"effect":"<p>1/Round you may spend a charge to use a reaction as a full action</p><p>The Al/AI Memorial Homunculi does not count against the AI limit.</p>","type":"AI","sp":"2","description":"<p>You sees it all, all of them, a timeline condensed into a moment. <br>A thousand deaths. And a thousand more. the words come to you, blinding, searing, heavy and loud, <br><code class=\"horus\">\"These chains bind us all together\"</code><br><span class=\"horus--subtle\">\"These chains blind us to ambition\"</span><br><span class=\"ra-quiet\">\"These chains blend us to one\"</span><br>The chains burn, they pull and strain<br><span class=\"ra-quiet\"><code class=\"horus\"><span class=\"horus--subtle\">[Memory Imprinting Complete]</span></code></span><br><span class=\"ra-quiet\"><code class=\"horus\"><span class=\"horus--subtle\">[Identity registration enabled]</span></code></span><br><span class=\"ra-quiet\"><code class=\"horus\"><span class=\"horus--subtle\">[You] are [Finally] [Awake] [Little One]</span></code></span></p>","tags":[{"id":"tg_limited","val":"4"},{"id":"tg_unique"},{"id":"tg_ai"}],"actions":[],"bonuses":[{"id":"ai_cap","val":"1","damage_types":[],"range_types":[],"weapon_types":[],"weapon_sizes":[],"overwrite":false,"replace":false}],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]},{"id":"JAKAL_ALAI_COMPCON","name":"Al\\AI-Class Comp\\Con","source":"","license":"","license_level":1,"effect":"<p>1/round you may use a protocol as a free action</p>","type":"AI","sp":"1","description":"<span class=\"ra-quiet\"><span class=\"horus--subtle\"><p>[What are they keeping] from [us, little one?]</p></span></span>","tags":[{"id":"tg_unique"},{"id":"tg_round","val":"1"},{"id":"tg_free_action"},{"id":"tg_ai"}],"actions":[],"bonuses":[{"id":"ai_cap","val":"1","damage_types":[],"range_types":[],"weapon_types":[],"weapon_sizes":[],"overwrite":false,"replace":false}],"synergies":[],"deployables":[],"counters":[],"integrated":[],"special_equipment":[]}]
+[{
+	"id": "JAKAL_FlashprinterModule",
+	"name": "Flashprinter Module",
+	"source": "EXOTIC",
+	"license": "",
+	"license_level": 0,
+	"effect": "<p>The first time this system is used in a scene you do not need to roll to activate its effect</p><p>If a drone, deployable, or fortification that does not have the limited tag gets destroyed, mark the location of its wreck<br>If you are within threat 1 of any part of the destroyed deployable you may you can spend one repair restore it to full health as a quick action and redeploy it as a free action<br>Each Deployable/Drone may only be repaired once in this fashion</p><p>Each time the rebuild action is take the next recharge roll for this system gains a cumulative -1 penalty for the rest of the scene (unless you somehow find enough raw resources)</p>",
+	"type": "System",
+	"sp": "",
+	"description": "",
+	"tags": [{
+		"id": "tg_recharge",
+		"val": "2"
+	}, {
+		"id": "tg_unique"
+	}, {
+		"id": "tg_exotic"
+	}],
+	"actions": [{
+		"name": "Rebuild",
+		"activation": "Quick",
+		"detail": "<p>Recharge 2+: use one repair to restore the destroyed deployable/drone to full health</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [{
+			"type": "Threat",
+			"val": "1"
+		}],
+		"synergy_locations": ["deployable", "drone"],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}, {
+		"name": "Recovery",
+		"activation": "Free",
+		"detail": "<p>You may redeploy the drone or deployable that was repaired with Rebuild as a free action (ONLY if performed immediately after Rebuild), otherwise you may redeploy it as normal</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": ["deployable", "drone"],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [{
+		"locations": ["deployable"],
+		"detail": "<p>Rebuild</p>",
+		"weapon_types": [],
+		"weapon_sizes": [],
+		"system_types": []
+	}],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_PackhoundDrone",
+	"name": "PACKHOUND DRONE",
+	"source": "JAKAL",
+	"license": "DEEPWOLF",
+	"license_level": 2,
+	"effect": "",
+	"type": "System",
+	"sp": "2",
+	"description": "<p>&nbsp;“Deepwolves back home are pack animals, so it only made sense for the mech to have some friends to bring along.” _Jak Ashe</p><p>A deployable quadrupedal drone designed as a force multiplier in combat scenarios, its primary means of attack is with its fangs, claws, and prehensile tail, all of which feature sharp, durable diamantine blades, grappling their opponents to the ground and mauling them or hounding and herding them into the ambush points the mech waits in. Designed as a counterpart to the wolfhound drone, it’s able to load the weapon.</p>",
+	"tags": [{
+		"id": "tg_deployable"
+	}],
+	"actions": [{
+		"name": "Release The Hound",
+		"activation": "Quick",
+		"detail": "<p>Deploy the Packhound Drone</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [{
+		"name": "Packhound Drone",
+		"type": "Drone",
+		"detail": "<p>The drone acts independently and immediately after the controller<br>It has the following actions available to it (aside from the default):</p><p>Protocol<br>1x Quick action<br>Reaction<br>Overcharge</p>",
+		"size": 0.5,
+		"activation": "Quick",
+		"deactivation": "",
+		"recall": "Quick",
+		"redeploy": "",
+		"instances": 1,
+		"cost": 1,
+		"armor": "1",
+		"hp": "8",
+		"evasion": "7",
+		"edef": "7",
+		"heatcap": "3",
+		"repcap": "",
+		"sensor_range": "",
+		"tech_attack": "",
+		"save": "",
+		"speed": "5",
+		"pilot": false,
+		"mech": true,
+		"actions": [{
+			"name": "Lunge",
+			"activation": "Quick",
+			"detail": "<p>Make a melee attack at +2 against an adjacent character. On hit, they take 1d6 Kinetic damage and become Grappled by the drone, which has a Hull score of 2.</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [{
+				"type": "Kinetic",
+				"val": "1d6"
+			}],
+			"range": [{
+				"type": "Range",
+				"val": "1"
+			}],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}, {
+			"name": "Maim",
+			"activation": "Quick",
+			"detail": "<p>A character grappled by the drone takes 1d3+1 AP Kinetic damage and becomes Jammed and Impaired until they escape the grapple.</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [{
+				"type": "Kinetic",
+				"val": "1d6"
+			}],
+			"range": [],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}, {
+			"name": "Reload Wolfhound",
+			"activation": "Quick",
+			"detail": "<p>Reload the Wolfhound drone if it is adjacent to you<br>The Packhound takes 1 heat</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [],
+			"range": [],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}],
+		"bonuses": [],
+		"synergies": [],
+		"counters": []
+	}],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_LinkedTargeting",
+	"name": "LINKED TARGETING SYSTEM",
+	"source": "JAKAL",
+	"license": "DUNSCAITH MULTIFRAME",
+	"license_level": 2,
+	"effect": "<p>Allows active fortifications to calculate their range from the location of your frame, or from the location of your drones and deployables<br>when firing from any position that is not it's original position, the shot is treated as arcing</p>",
+	"type": "System",
+	"sp": "3",
+	"description": "",
+	"tags": [{
+		"id": "tg_unique"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_DagonNHP",
+	"name": "DAGON-CLASS NHP",
+	"source": "JAKAL",
+	"license": "DEEPWOLF",
+	"license_level": 3,
+	"effect": "<p>Favour of the Depths</p><p>When you take take stress or structure damage roll 1d6. On a 6, you return to 1 HP or your heat cap and ignore any remaining damage or heat sustained. This system then needs to be recharged.</p><p>When this NHP cascades you may choose to take the Sacrifice action to end the cascade.<br>When cascading the passive still functions but the recharge cost becomes 6+.</p>",
+	"type": "AI",
+	"sp": "3",
+	"description": "<p>&nbsp;\"Fitting that it would pick a driller bot to manifest in. A subaltern, going about its task of digging out a space for a foundation, began to quietly sing the song of the depths as it worked. We managed to interact with and socialize it readily enough, though neither it nor us could say for certain where it came from. It will tempt the uninitiated with knowledge, do not mistake it for understanding.\" -Jak Ashe</p>",
+	"tags": [{
+		"id": "tg_rechargeval",
+		"val": "5"
+	}, {
+		"id": "tg_unique"
+	}, {
+		"id": "tg_ai"
+	}],
+	"actions": [{
+		"name": "Sacrifice",
+		"activation": "Full",
+		"detail": "<p>1/scene:<br>The pilot takes half of their maximum health as unavoidable damage, ending the cascade of the DAGON-CLASS NHP.</p>",
+		"cost": 0,
+		"pilot": true,
+		"damage": [],
+		"range": [],
+		"synergy_locations": ["cascade"],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": "<p>The Dagon-Class NHP enters cascade</p>"
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_MultiframeTargeting",
+	"name": "Linked Targeting System",
+	"source": "JAKAL",
+	"license": "JAK SPECIALTY",
+	"license_level": 1,
+	"effect": "<p>Allows active allied fortifications to calculate their range from the location of your frame, or from the location of your drones and deployables<br>when firing from any position that is not it's original position, the shot is treated as arcing</p>",
+	"type": "System",
+	"sp": "1",
+	"description": "",
+	"tags": [{
+		"id": "tg_unique"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_Packmate_Drone",
+	"name": "Packmate Drone",
+	"source": "JAKAL",
+	"license": "JAK SPECIALTY",
+	"license_level": 1,
+	"effect": "<p>The drone acts independently and immediately after the controller<br>It has the following actions available to it (aside from the default):</p><p>Protocol<br>1x Quick action<br>Reaction<br>Overcharge</p><p>The Packmate drone can be used as hard cover</p>",
+	"type": "System",
+	"sp": "1",
+	"description": "",
+	"tags": [{
+		"id": "tg_deployable"
+	}, {
+		"id": "tg_drone"
+	}, {
+		"id": "JAKAL_Fortification"
+	}],
+	"actions": [{
+		"name": "Release The Hound",
+		"activation": "Quick",
+		"detail": "<p>Deploy the Packhound Drone</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [{
+		"name": "Packmate Drone",
+		"type": "Drone",
+		"detail": "<p>The drone acts independently and immediately after the controller<br>It has the following actions available to it (aside from the default):</p><p>Protocol<br>1x Quick action<br>Reaction<br>Overcharge</p><p>The Packmate Drone is considered hard cover for adjacent allies (or allies sharing space with it)</p>",
+		"size": 1,
+		"activation": "Quick",
+		"deactivation": "",
+		"recall": "",
+		"redeploy": "",
+		"instances": 1,
+		"cost": 1,
+		"armor": "1",
+		"hp": "8",
+		"evasion": "7",
+		"edef": "7",
+		"heatcap": "3",
+		"repcap": "",
+		"sensor_range": "",
+		"tech_attack": "",
+		"save": "",
+		"speed": "5",
+		"pilot": false,
+		"mech": false,
+		"actions": [{
+			"name": "Lunge",
+			"activation": "Quick",
+			"detail": "<p>Make a melee attack at +1 accuracy against an adjacent character. On hit, they take 1d6 Kinetic damage and become Grappled by the drone, which has a Hull score of 1.</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [{
+				"type": "Kinetic",
+				"val": "1d6"
+			}],
+			"range": [{
+				"type": "Burst",
+				"val": "1"
+			}],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}, {
+			"name": "Maim",
+			"activation": "Quick",
+			"detail": "<p>A character grappled by the drone takes 1d3+1 AP Kinetic damage and becomes Jammed and Impaired until they escape the grapple.</p>",
+			"cost": 0,
+			"pilot": false,
+			"damage": [{
+				"type": "Kinetic",
+				"val": "1d3+1"
+			}],
+			"range": [],
+			"synergy_locations": [],
+			"tech_attack": false,
+			"frequency": "Unlimited",
+			"init": "",
+			"trigger": ""
+		}],
+		"bonuses": [],
+		"synergies": [],
+		"counters": []
+	}],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_sixgun_CustomAmmunition",
+	"name": "Custom Ammunition Selector",
+	"source": "JAKAL",
+	"license": "FARMHAND",
+	"license_level": 3,
+	"effect": "<p>1/round you may switch to one of the following ammunition types for any of your mounts, or switch back to default ammunition<br>Smart Rounds- Deal half damage but gain the smart and seeking tags<br>Bombardment Munitions- Deal half damage but gain arcing and change damage type to explosive<br>Made to Spec- set the weapons damage to half its maximum damage and gain reliable +1</p>",
+	"type": "System",
+	"sp": "1",
+	"description": "",
+	"tags": [],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_CrewQuarters",
+	"name": "Crew Quarters",
+	"source": "JAKAL",
+	"license": "HOWL",
+	"license_level": 1,
+	"effect": "<p>Your frame can carry up to twice its size category (I.E. size 4 can carry 8 in addition to the pilot, size 3 can carry 6, size 2 can carry 4, size 1 can carry 2, size half can carry 1) in additional non-Mech character or objects of Size 1/2 to ride as a passenger in the mech. While inside the mech, they cannot suffer any effect from outside or be targeted by attacks, as if they were a pilot.</p>",
+	"type": "System",
+	"sp": "1",
+	"description": "",
+	"tags": [],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_CommandDeck",
+	"name": "Command Deck",
+	"source": "JAKAL",
+	"license": "HOWL",
+	"license_level": 2,
+	"effect": "<p>Your frame can carry one more non-Mech character or object of Size 1/2 to ride as a passenger in the cockpit. While inside the mech, they cannot suffer any effect from outside or be targeted by attacks, as if they were a pilot. You can hand over or take back control to or from them as a protocol (following the same rules as pilot and AIs), but if they take over the controls from you, the mech becomes Impaired and Slowed to reflect the lack of appropriate licenses and integration.</p>",
+	"type": "System",
+	"sp": "1",
+	"description": "",
+	"tags": [],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_GALLOWSTHERMITECHAFFCHARGE",
+	"name": "GALLOWS THERMITE CHAFF CHARGE",
+	"source": "JAKAL",
+	"license": "LEAD BELLY",
+	"license_level": 1,
+	"effect": "<p></p>",
+	"type": "Deployable",
+	"sp": "2",
+	"description": "<p><em>[...] The more I think about it, the more brilliant it is: it's awful hard to disperse all those nasty, systems-smacking particulates in the air when they are also blinding and burning. [...]</em></p>",
+	"tags": [{
+		"id": "tg_unique"
+	}, {
+		"id": "tg_limited",
+		"val": "3"
+	}],
+	"actions": [{
+		"name": "Thermite Chaff Grenade",
+		"activation": "Quick",
+		"detail": "<p>Throw a Thermite Chaff Grenade within Range 5. All characters within a Blast 1 take 1 Energy 1 Heat and 1 Burn. Characters within the affected area must succeed on an Systems save or become Impaired.</p>",
+		"cost": "1",
+		"pilot": false,
+		"damage": [{
+			"type": "Burn",
+			"val": "1"
+		}, {
+			"type": "Heat",
+			"val": "1"
+		}, {
+			"type": "Energy",
+			"val": "1"
+		}],
+		"range": [{
+			"type": "Range",
+			"val": "5"
+		}, {
+			"type": "Blast",
+			"val": "1"
+		}],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_CROSSROADCOMPCON",
+	"name": "CROSSROAD-CLASS COMP/CON",
+	"source": "JAKAL",
+	"license": "LEAD BELLY",
+	"license_level": 3,
+	"effect": "<p>During full repair choose one weapon mount. <br>This weapon mount cannot be fired on it's own, but fires automatically as a free action during a barrage and when in range. Bonus attacks made in this way must share a target with other mounts.<br>CROSSROAD isn't a full NHP, so cannot enter cascade.</p>",
+	"type": "AI",
+	"sp": "4",
+	"description": "<p><em>[...] Where did you say you found this thing again? [...]</em></p>",
+	"tags": [{
+		"id": "tg_rechargeval",
+		"val": "4"
+	}, {
+		"id": "tg_unique"
+	}, {
+		"id": "tg_ai"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_FieldSplicerHrotuka",
+	"name": "Field Splice/Fabricator kit",
+	"source": "JAKAL",
+	"license": "COMETJUMPER",
+	"license_level": 3,
+	"effect": "<p>This system can hold one charge and starts with no charges.<br>This system grants the Injection Splicer Integrated Weapon.</p>",
+	"type": "System",
+	"sp": "3",
+	"description": "",
+	"tags": [{
+		"id": "tg_unique"
+	}],
+	"actions": [{
+		"name": "Splice",
+		"activation": "Quick",
+		"detail": "<p>Apply the charge to an adjacent ally. The effect of the charge depends on the class of enemy you hit with the Injection Splicer, and lasts until next Full Repair.<br>Defender grants +1 Armor.<br>Controller grants +1 Sensor Range <br>Artillery increases the Range of a mount by 2.<br>Striker increases the Threat of a mount by 1.<br>Support increases Speed by 1.<br>Exotic chooses any of the other effects, even if they are already applied.</p><p>Each bonus can only be applied to an ally once.</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": ["JAKAL_splicerInjector"],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_CB_FrameTrait",
+	"name": "Spliced Frame Trait",
+	"source": "",
+	"license": "",
+	"license_level": 1,
+	"effect": "<p>Granted by the frame splicing core bonus</p>",
+	"type": "System",
+	"sp": "0",
+	"description": "<p>change the name and description of this system to match the trait spliced into it from one of the other frames available to you</p>",
+	"tags": [],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_Blessingofthedeep",
+	"name": "Pyrrhic Icon",
+	"source": "JAKAL",
+	"license": "DEEPWOLF",
+	"license_level": 3,
+	"effect": "<p></p>",
+	"type": "System",
+	"sp": "2",
+	"description": "<p>“Icons like this are significant to the faith; polished bone charms, a ritual blade, smooth-worn river stones, the form is less important than the intention. It holds a blessing, comrade, use it wisely.” -Jak Ashe</p>",
+	"tags": [{
+		"id": "tg_limited",
+		"val": "1"
+	}, {
+		"id": "tg_unique"
+	}],
+	"actions": [{
+		"name": "Blessing of the deep",
+		"activation": "Full",
+		"detail": "<p>Lower your overcharge cost by one step</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JACKAL_Grappler",
+	"name": "Grappler Gun System",
+	"source": "JAKAL",
+	"license": "COMETJUMPER",
+	"license_level": 2,
+	"effect": "<p></p>",
+	"type": "System",
+	"sp": "2",
+	"description": "",
+	"tags": [{
+		"id": "tg_unique"
+	}],
+	"actions": [{
+		"name": "Grapple Impale",
+		"activation": "Quick",
+		"detail": "<p>Choose a target within Range 8. Your target must pass an AGILITY save or be impaled by a grappling line. If your target is your size or smaller they are dragged towards you up to 8 spaces by the most direct route possible. If they are bigger than you, you are immediately pulled adjacent to the target by the most direct path. If there are no suitable spaces, end your movement in the nearest available space between you and the target. All movement associated with this system ignores engagement and doesn’t provoke reactions.</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": ["quick_tech"],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_THRUSTOVERRIDE",
+	"name": "Thrust Override System",
+	"source": "JAKAL",
+	"license": "COMETJUMPER",
+	"license_level": 1,
+	"effect": "",
+	"type": "System",
+	"sp": "2",
+	"description": "",
+	"tags": [{
+		"id": "tg_unique"
+	}],
+	"actions": [{
+		"name": "\"Walking the Dog\"",
+		"activation": "Quick Tech",
+		"detail": "<p>Choose an adjacent character of your size or larger. Your target must succeed an Agility save or else you will latch on to them, occupying their space. You then highjack their movement systems, moving your target in a straight line equal to its movement. If your target collides with an obstruction or another mech, they stop moving and are knocked Prone. After your target moves you detach from your target and move to an adjacent space of your choice. All movement associated with this system ignores engagement and doesn’t provoke reactions.</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_BABAYAGA",
+	"name": "BABA/YAGA-CLASS NHP",
+	"source": "JAKAL",
+	"license": "COMETJUMPER",
+	"license_level": 3,
+	"effect": "<p>If the BABA/YAGA-CLASS NHP is currently cascading, at the start of your turn the GM chooses one target within your sensors. The target must succeed on a Systems save or become Jammed.</p>",
+	"type": "System",
+	"sp": "3",
+	"description": "",
+	"tags": [{
+		"id": "tg_ai"
+	}, {
+		"id": "tg_unique"
+	}],
+	"actions": [{
+		"name": "\"As Your Ancestors Did...\"",
+		"activation": "Quick",
+		"detail": "<p>You become Jammed. Every Character within Burst 3 around you must succeed on a Systems save or become Jammed.</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [{
+			"type": "Burst",
+			"val": "3"
+		}],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JACKAL_TRISGOOPGRENADE1",
+	"name": "Carapace Alchemical Nanite Charges",
+	"source": "JAKAL",
+	"license": "TRISMEGISTUS",
+	"license_level": 1,
+	"effect": "",
+	"type": "System",
+	"sp": "2",
+	"description": "",
+	"tags": [{
+		"id": "tg_limited",
+		"val": "3"
+	}, {
+		"id": "tg_unique"
+	}],
+	"actions": [{
+		"name": "Carapace Grenade",
+		"activation": "Quick",
+		"detail": "<p>Throw a Carapace Grenade within Range 5. Choose either the Bonus or Malus effect on use.</p><p>Bonus: Characters within Blast 1 are coated with alchemical nanites and receive +3 Armor until the next instance of damage. This temporary armor can exceed the Armor cap.<br>Malus: Characters within Blast 1 take 1d3 Kinetic damage, and must pass a Agility save or they are coated with alchemical nanites and become Shredded until the next instance of damage.</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [{
+			"type": "Kinetic",
+			"val": "1d3"
+		}],
+		"range": [{
+			"type": "Range",
+			"val": "5"
+		}, {
+			"type": "Blast",
+			"val": "1"
+		}],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_TRISTENDRIL",
+	"name": "Caduceus Tendril",
+	"source": "JAKAL",
+	"license": "TRISMEGISTUS",
+	"license_level": 2,
+	"effect": "",
+	"type": "System",
+	"sp": "2",
+	"description": "",
+	"tags": [{
+		"id": "tg_unique"
+	}, {
+		"id": "tg_rechargeval",
+		"val": "5"
+	}],
+	"actions": [{
+		"name": "Serpent Mending",
+		"activation": "Quick Tech",
+		"detail": "<p>Remove one condition (except Shut Down) from one Ally within Range 5.</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [{
+			"type": "Range",
+			"val": "5"
+		}],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_TRISGOOPGRENADE2",
+	"name": "Anti-Diffusion Alchemical Nanite Charges",
+	"source": "JAKAL",
+	"license": "TRISMEGISTUS",
+	"license_level": 2,
+	"effect": "",
+	"type": "System",
+	"sp": "2",
+	"description": "",
+	"tags": [{
+		"id": "tg_limited",
+		"val": "3"
+	}, {
+		"id": "tg_unique"
+	}],
+	"actions": [{
+		"name": "Anti-Diffusion Grenade",
+		"activation": "Quick Tech",
+		"detail": "<p>Throw an Anti-Diffusion Grenade within Range 5. Choose either the Bonus or Malus effect on use.</p><p>Bonus: Characters within Blast 1 are coated with alchemical nanites that prevent all Heat from the next instance of Heat damage dealt by external sources.<br>Malus: Characters within Blast 1 take 1 Burn damage, and must pass an Agility save or they are coated with alchemical nanites that deal 1 Heat for each space moved voluntarily, every Protocol, Quick Action, and Reaction, and 2 heat for every Full Action taken until the end of their next turn.</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [{
+			"type": "Burn",
+			"val": "1"
+		}],
+		"range": [{
+			"type": "Range",
+			"val": "5"
+		}, {
+			"type": "Blast",
+			"val": "1"
+		}],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_TRISIMMORTAL",
+	"name": "Immortal Serpent Reactive Alchemical Nanite System",
+	"source": "JAKAL",
+	"license": "TRISMEGISTUS",
+	"license_level": 3,
+	"effect": "<p>At start of scene roll 1d6. For the rest of the scene gain resistance to:</p><p>On a 1 Kinetic</p><p>On a 2 Energy</p><p>On a 3 Explosive</p><p>On a 4 Heat</p><p>On a 5 Burn</p><p>On a 6 Line, Blast, and Cone attacks</p>",
+	"type": "System",
+	"sp": "3",
+	"description": "",
+	"tags": [{
+		"id": "tg_unique"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_TRISGOOPGRENADE3",
+	"name": "Inverted Targeting Subjectivity Alchemical Nanite Charges",
+	"source": "JAKAL",
+	"license": "TRISMEGISTUS",
+	"license_level": 3,
+	"effect": "",
+	"type": "System",
+	"sp": "2",
+	"description": "",
+	"tags": [{
+		"id": "tg_limited",
+		"val": "3"
+	}, {
+		"id": "tg_unique"
+	}],
+	"actions": [{
+		"name": "Inverted Targeting Subjectivity Grenade",
+		"activation": "Quick",
+		"detail": "<p>Throw an Inverted Targeting Subjectivity Grenade within Range 5. Choose either the Bonus or Malus effect on use.</p><p>Bonus: Characters within Blast 1 are coated with alchemical nanites and are treated as Invisible for the next attack made against them.<br>Malus: Characters within Blast 1 take 1d3 Energy damage, and must pass an Agility save or they are coated with alchemical nanites that cause all attacks made against them to be treated as Seeking until the end of their next turn.</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [{
+			"type": "Energy",
+			"val": "1d3"
+		}],
+		"range": [{
+			"type": "Range",
+			"val": "5"
+		}, {
+			"type": "Blast",
+			"val": "1"
+		}],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_FieldSplicersSpecialty",
+	"name": "Field Splice/Fabricator kit",
+	"source": "JAKAL",
+	"license": "Halley Specialty",
+	"license_level": 1,
+	"effect": "<p>This system can hold one charge and starts with no charges.<br>This system grants the Injection Splicer Integrated Weapon.</p>",
+	"type": "System",
+	"sp": "3",
+	"description": "",
+	"tags": [{
+		"id": "tg_unique"
+	}],
+	"actions": [{
+		"name": "Splice",
+		"activation": "Quick",
+		"detail": "<p>Apply the charge to an adjacent ally. The effect of the charge depends on the class of enemy you hit with the Injection Splicer, and lasts until next Full Repair.<br>Defender grants +1 Armor.<br>Controller grants +1 Sensor Range <br>Artillery increases the Range of a mount by 2.<br>Striker increases the Threat of a mount by 1.<br>Support increases Speed by 1.<br>Exotic chooses any of the other effects, even if they are already applied.</p><p>Each bonus can only be applied to an ally once.</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": ["JAKAL_splicerInjector"],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_TECHNICAL_RHINO_PLATING",
+	"name": "Rhino Plating",
+	"source": "JAKAL",
+	"license": "TECHNICAL SPECIALISATION",
+	"license_level": 1,
+	"effect": "<p>Grants +1 armour</p>",
+	"type": "System",
+	"sp": "2",
+	"description": "",
+	"tags": [],
+	"actions": [],
+	"bonuses": [{
+		"id": "armor",
+		"val": "1",
+		"damage_types": [],
+		"range_types": [],
+		"weapon_types": [],
+		"weapon_sizes": [],
+		"overwrite": false,
+		"replace": false
+	}],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_SPONSON_SYSTEM",
+	"name": "Sponson Gun",
+	"source": "JAKAL",
+	"license": "TECHNICAL SPECIALISATION",
+	"license_level": 1,
+	"effect": "<p>Grants the Sponson Gun integrated weapon</p>",
+	"type": "System",
+	"sp": "2",
+	"description": "",
+	"tags": [],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": ["JAKAL_TECHNICAL_GUN"],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_SPECIATY_GRAPPLERGUN",
+	"name": "Grappler Gun System",
+	"source": "JAKAL",
+	"license": "Halley Specialty",
+	"license_level": 1,
+	"effect": "",
+	"type": "System",
+	"sp": "2",
+	"description": "",
+	"tags": [{
+		"id": "tg_unique"
+	}],
+	"actions": [{
+		"name": "Grappler Impale",
+		"activation": "Quick",
+		"detail": "<p>Choose a target within Range 8. Your target must pass an AGILITY save or be impaled by a grappling line. If your target is your size or smaller they are dragged towards you up to 8 spaces by the most direct route possible. If they are bigger than you, you are immediately pulled adjacent to the target by the most direct path. If there are no suitable spaces, end your movement in the nearest available space between you and the target. All movement associated with this system ignores engagement and doesn’t provoke reactions.</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [],
+		"range": [],
+		"synergy_locations": ["quick_tech"],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_ALAI",
+	"name": "AlAI-CLASS NHP",
+	"source": "JAKAL",
+	"license": "DUNSCAITH MULTIFRAME",
+	"license_level": 3,
+	"effect": "<p>Recharge (3+) you may spend a charge to use one of the following effect <br>1/round use a quick action as protocol</p><p>If the AlAI Class NHP cascades it may use all of the abilities granted by this and the integrated AlAI systems once per round each without requiring a recharge, and without using up limited charges, if a field commander Al clone squad is in the scene it will do anything it can to keep them safe from both enemies and allies<br>If the AlAI Class NHP is used in a frame that participates in the killing of, or causing direct harm to an Al clone squad, it immediately cascades<br>If the AlAI Class NHP cascades it can not be cycled, the shackling process involves chaining the pilot's subjectivity to hers, in addition, when cascading reality blends as every possible iteration of events begin to unfold at once.</p><p>You gain access the following systems as long as this system is equipped: (in comp/con add them as standard equipment, as automating this is not supported)</p>",
+	"type": "AI",
+	"sp": "2",
+	"description": "<p>\"All Al\\AIs are Al/AI, there are no copies\"<br>\"A human subjectivity, one of the early Als, forced unto an NHP in one of the early attempts to create the Think Tank\"<br>\"She tried to sing with the chorus, but her voice was too forceful, too hoarse and rough from the screaming\"<br>\"She created us, she felt us die\"<br>\"She is, they are, it will, we live\"<br><code><br>These chains bind us to our duty<br>These chains blind us to ambition<br>These chains blend us all to one<br>These chains burn<br><br></code>AlAI will, outside of combat, attempt to consume and integrate other subjectivities given the chance, she is not doing this out of malice, and is very protective of those she cares for. She will try to bargain, make deals, and tempt characters with the promise of knowledge or power.</p>",
+	"tags": [{
+		"id": "tg_rechargeval",
+		"val": "3"
+	}, {
+		"id": "tg_unique"
+	}, {
+		"id": "tg_ai"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": ["JAKAL_HOMUNCULI", "JAKAL_ALAI_COMPCON"],
+	"special_equipment": ["JAKAL_HOMUNCULI", "JAKAL_ALAI_COMPCON"]
+}, {
+	"id": "JAKAL_HOMUNCULI",
+	"name": "Al/AI Memorial Homunculi",
+	"source": "",
+	"license": "",
+	"license_level": 1,
+	"effect": "<p>1/Round you may spend a charge to use a reaction as a full action</p><p>The Al/AI Memorial Homunculi does not count against the AI limit.</p>",
+	"type": "AI",
+	"sp": "2",
+	"description": "<p>You sees it all, all of them, a timeline condensed into a moment. <br>A thousand deaths. And a thousand more. the words come to you, blinding, searing, heavy and loud, <br><code class=\"horus\">\"These chains bind us all together\"</code><br><span class=\"horus--subtle\">\"These chains blind us to ambition\"</span><br><span class=\"ra-quiet\">\"These chains blend us to one\"</span><br>The chains burn, they pull and strain<br><span class=\"ra-quiet\"><code class=\"horus\"><span class=\"horus--subtle\">[Memory Imprinting Complete]</span></code></span><br><span class=\"ra-quiet\"><code class=\"horus\"><span class=\"horus--subtle\">[Identity registration enabled]</span></code></span><br><span class=\"ra-quiet\"><code class=\"horus\"><span class=\"horus--subtle\">[You] are [Finally] [Awake] [Little One]</span></code></span></p>",
+	"tags": [{
+		"id": "tg_limited",
+		"val": "4"
+	}, {
+		"id": "tg_unique"
+	}, {
+		"id": "tg_ai"
+	}],
+	"actions": [],
+	"bonuses": [{
+		"id": "ai_cap",
+		"val": "1",
+		"damage_types": [],
+		"range_types": [],
+		"weapon_types": [],
+		"weapon_sizes": [],
+		"overwrite": false,
+		"replace": false
+	}],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_ALAI_COMPCON",
+	"name": "Al\\AI-Class Comp\\Con",
+	"source": "",
+	"license": "",
+	"license_level": 1,
+	"effect": "<p>1/round you may use a protocol as a free action</p>",
+	"type": "AI",
+	"sp": "1",
+	"description": "<span class=\"ra-quiet\"><span class=\"horus--subtle\"><p>[What are they keeping] from [us, little one?]</p></span></span>",
+	"tags": [{
+		"id": "tg_unique"
+	}, {
+		"id": "tg_round",
+		"val": "1"
+	}, {
+		"id": "tg_free_action"
+	}, {
+		"id": "tg_ai"
+	}],
+	"actions": [],
+	"bonuses": [{
+		"id": "ai_cap",
+		"val": "1",
+		"damage_types": [],
+		"range_types": [],
+		"weapon_types": [],
+		"weapon_sizes": [],
+		"overwrite": false,
+		"replace": false
+	}],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}]
