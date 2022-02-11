@@ -398,57 +398,6 @@
 	"integrated": [],
 	"special_equipment": []
 }, {
-	"id": "JAKAL_GALLOWSTHERMITECHAFFCHARGE",
-	"name": "GALLOWS THERMITE CHAFF CHARGE",
-	"source": "JAKAL",
-	"license": "LEAD BELLY",
-	"license_level": 1,
-	"effect": "<p></p>",
-	"type": "Deployable",
-	"sp": "2",
-	"description": "<p><em>[...] The more I think about it, the more brilliant it is: it's awful hard to disperse all those nasty, systems-smacking particulates in the air when they are also blinding and burning. [...]</em></p>",
-	"tags": [{
-		"id": "tg_unique"
-	}, {
-		"id": "tg_limited",
-		"val": "3"
-	}],
-	"actions": [{
-		"name": "Thermite Chaff Grenade",
-		"activation": "Quick",
-		"detail": "<p>Throw a Thermite Chaff Grenade within Range 5. All characters within a Blast 1 take 1 Energy 1 Heat and 1 Burn. Characters within the affected area must succeed on an Systems save or become Impaired.</p>",
-		"cost": "1",
-		"pilot": false,
-		"damage": [{
-			"type": "Burn",
-			"val": "1"
-		}, {
-			"type": "Heat",
-			"val": "1"
-		}, {
-			"type": "Energy",
-			"val": "1"
-		}],
-		"range": [{
-			"type": "Range",
-			"val": "5"
-		}, {
-			"type": "Blast",
-			"val": "1"
-		}],
-		"synergy_locations": [],
-		"tech_attack": false,
-		"frequency": "Unlimited",
-		"init": "",
-		"trigger": ""
-	}],
-	"bonuses": [],
-	"synergies": [],
-	"deployables": [],
-	"counters": [],
-	"integrated": [],
-	"special_equipment": []
-}, {
 	"id": "JAKAL_CROSSROADCOMPCON",
 	"name": "CROSSROAD-CLASS COMP/CON",
 	"source": "JAKAL",
@@ -536,7 +485,7 @@
 	"description": "<p>“Icons like this are significant to the faith; polished bone charms, a ritual blade, smooth-worn river stones, the form is less important than the intention. It holds a blessing, comrade, use it wisely.” -Jak Ashe</p>",
 	"tags": [{
 		"id": "tg_limited",
-		"val": "1"
+		"val": 1
 	}, {
 		"id": "tg_unique"
 	}],
@@ -676,7 +625,7 @@
 	"description": "",
 	"tags": [{
 		"id": "tg_limited",
-		"val": "3"
+		"val": 3
 	}, {
 		"id": "tg_unique"
 	}],
@@ -760,7 +709,7 @@
 	"description": "",
 	"tags": [{
 		"id": "tg_limited",
-		"val": "3"
+		"val": 3
 	}, {
 		"id": "tg_unique"
 	}],
@@ -825,7 +774,7 @@
 	"description": "",
 	"tags": [{
 		"id": "tg_limited",
-		"val": "3"
+		"val": 3
 	}, {
 		"id": "tg_unique"
 	}],
@@ -895,7 +844,7 @@
 	"id": "JAKAL_TECHNICAL_RHINO_PLATING",
 	"name": "Rhino Plating",
 	"source": "JAKAL",
-	"license": "TECHNICAL SPECIALISATION",
+	"license": "HOWL",
 	"license_level": 1,
 	"effect": "<p>Grants +1 armour</p>",
 	"type": "System",
@@ -922,8 +871,8 @@
 	"id": "JAKAL_SPONSON_SYSTEM",
 	"name": "Sponson Gun",
 	"source": "JAKAL",
-	"license": "TECHNICAL SPECIALISATION",
-	"license_level": 1,
+	"license": "HOWL",
+	"license_level": 2,
 	"effect": "<p>Grants the Sponson Gun integrated weapon</p>",
 	"type": "System",
 	"sp": "2",
@@ -1006,7 +955,7 @@
 	"description": "<p>You sees it all, all of them, a timeline condensed into a moment. <br>A thousand deaths. And a thousand more. the words come to you, blinding, searing, heavy and loud, <br><code class=\"horus\">\"These chains bind us all together\"</code><br><span class=\"horus--subtle\">\"These chains blind us to ambition\"</span><br><span class=\"ra-quiet\">\"These chains blend us to one\"</span><br>The chains burn, they pull and strain<br><span class=\"ra-quiet\"><code class=\"horus\"><span class=\"horus--subtle\">[Memory Imprinting Complete]</span></code></span><br><span class=\"ra-quiet\"><code class=\"horus\"><span class=\"horus--subtle\">[Identity registration enabled]</span></code></span><br><span class=\"ra-quiet\"><code class=\"horus\"><span class=\"horus--subtle\">[You] are [Finally] [Awake] [Little One]</span></code></span></p>",
 	"tags": [{
 		"id": "tg_limited",
-		"val": "4"
+		"val": 4
 	}, {
 		"id": "tg_unique"
 	}, {
@@ -1059,6 +1008,57 @@
 		"overwrite": false,
 		"replace": false
 	}],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": []
+}, {
+	"id": "JAKAL_GALLOWS_THERMITE_CHAFF_CHARGE_F",
+	"name": "GALLOWS THERMITE CHAFF CHARGE",
+	"source": "JAKAL",
+	"license": "LEAD BELLY",
+	"license_level": 1,
+	"effect": "",
+	"type": "Deployable",
+	"sp": "2",
+	"description": "<p><em>[...] The more I think about it, the more brilliant it is: it's awful hard to disperse all those nasty, systems-smacking particulates in the air when they are also blinding and burning. [...]</em></p>",
+	"tags": [{
+		"id": "tg_unique"
+	}, {
+		"id": "tg_limited",
+		"val": 3
+	}],
+	"actions": [{
+		"name": "Thermite Chaff Grenade",
+		"activation": "Quick",
+		"detail": "<p>Throw a Thermite Chaff Grenade within Range 5. All characters within a Blast 1 take 1 Energy 1 Heat and 1 Burn. Characters within the affected area must succeed on an Systems save or become Impaired.</p>",
+		"cost": 0,
+		"pilot": false,
+		"damage": [{
+			"type": "Energy",
+			"val": "1"
+		}, {
+			"type": "Heat",
+			"val": "1"
+		}, {
+			"type": "Burn",
+			"val": "1"
+		}],
+		"range": [{
+			"type": "Range",
+			"val": "5"
+		}, {
+			"type": "Blast",
+			"val": "1"
+		}],
+		"synergy_locations": [],
+		"tech_attack": false,
+		"frequency": "Unlimited",
+		"init": "",
+		"trigger": ""
+	}],
+	"bonuses": [],
 	"synergies": [],
 	"deployables": [],
 	"counters": [],

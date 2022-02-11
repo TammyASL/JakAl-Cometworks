@@ -21,16 +21,16 @@
 	"no_synergy": false,
 	"damage": [{
 		"type": "Kinetic",
-		"val": "1"
+		"val": 1
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "15"
+		"val": 15
 	}],
 	"sp": 0,
 	"tags": [{
 		"id": "tg_reliable",
-		"val": "1"
+		"val": 1
 	}, {
 		"id": "tg_ap"
 	}, {
@@ -67,18 +67,18 @@
 	"no_synergy": false,
 	"damage": [{
 		"type": "Energy",
-		"val": "2"
+		"val": 2
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "15"
+		"val": 15
 	}],
 	"sp": 0,
 	"tags": [{
 		"id": "tg_unique"
 	}, {
 		"id": "tg_accurate",
-		"val": "1"
+		"val": 1
 	}],
 	"actions": [],
 	"bonuses": [],
@@ -111,14 +111,14 @@
 	"no_synergy": false,
 	"damage": [{
 		"type": "Explosive",
-		"val": "3"
+		"val": 3
 	}],
 	"range": [{
 		"type": "Threat",
-		"val": "1"
+		"val": 1
 	}, {
 		"type": "Thrown",
-		"val": "5"
+		"val": 5
 	}],
 	"sp": 0,
 	"tags": [{
@@ -163,7 +163,7 @@
 	}],
 	"range": [{
 		"type": "Blast",
-		"val": "2"
+		"val": 2
 	}],
 	"sp": 0,
 	"tags": [],
@@ -202,7 +202,7 @@
 		}],
 		"range": [{
 			"type": "Threat",
-			"val": "2"
+			"val": 2
 		}],
 		"actions": [{
 			"name": "Load Blast-Pick",
@@ -226,7 +226,7 @@
 		"special_equipment": [],
 		"tags": [{
 			"id": "tg_inaccurate",
-			"val": "1"
+			"val": 1
 		}]
 	}, {
 		"name": "Loaded",
@@ -243,7 +243,7 @@
 		}],
 		"range": [{
 			"type": "Threat",
-			"val": "2"
+			"val": 2
 		}],
 		"actions": [{
 			"name": "Charge",
@@ -281,7 +281,7 @@
 		}],
 		"range": [{
 			"type": "Threat",
-			"val": "2"
+			"val": 2
 		}],
 		"actions": [{
 			"name": "Charge",
@@ -319,7 +319,7 @@
 		}],
 		"range": [{
 			"type": "Threat",
-			"val": "2"
+			"val": 2
 		}],
 		"actions": [{
 			"name": "Charge",
@@ -343,7 +343,7 @@
 		"special_equipment": [],
 		"tags": [{
 			"id": "tg_ap",
-			"val": "0"
+			"val": 0
 		}]
 	}, {
 		"name": "Blast",
@@ -363,7 +363,7 @@
 		}],
 		"range": [{
 			"type": "Threat",
-			"val": "3"
+			"val": 3
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -377,7 +377,7 @@
 			"val": ""
 		}, {
 			"id": "tg_reliable",
-			"val": "4"
+			"val": 4
 		}]
 	}]
 }, {
@@ -416,7 +416,7 @@
 		"damage": [],
 		"range": [{
 			"type": "Range",
-			"val": "1"
+			"val": 1
 		}],
 		"synergy_locations": ["deployable", "quick_activation"],
 		"tech_attack": false,
@@ -484,7 +484,7 @@
 			"val": "1d6"
 		}],
 		"range": [{
-			"val": "15",
+			"val": 15,
 			"type": "Range"
 		}],
 		"actions": [],
@@ -496,7 +496,7 @@
 		"special_equipment": [],
 		"tags": [{
 			"id": "tg_reliable",
-			"val": "1"
+			"val": 1
 		}]
 	}, {
 		"name": "Turret (Cannon)",
@@ -513,7 +513,7 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "12"
+			"val": 12
 		}, {
 			"type": "Blast",
 			"val": "1"
@@ -541,7 +541,7 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "10"
+			"val": 10
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -568,7 +568,7 @@
 		}],
 		"range": [{
 			"type": "Line",
-			"val": "7"
+			"val": 7
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -597,10 +597,10 @@
 		}],
 		"range": [{
 			"type": "Threat",
-			"val": "3"
+			"val": 3
 		}, {
 			"type": "Cone",
-			"val": "5"
+			"val": 5
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -625,7 +625,7 @@
 		}],
 		"range": [{
 			"type": "Threat",
-			"val": "2"
+			"val": 2
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -663,15 +663,15 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "3"
+		"val": 3
 	}, {
 		"type": "Threat",
-		"val": "3"
+		"val": 3
 	}],
 	"sp": "1",
 	"tags": [{
 		"id": "tg_loadingval",
-		"val": "2"
+		"val": 2
 	}],
 	"actions": [],
 	"bonuses": [],
@@ -722,10 +722,10 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "3"
+			"val": 3
 		}, {
 			"type": "Threat",
-			"val": "3"
+			"val": 3
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -736,7 +736,7 @@
 		"special_equipment": [],
 		"tags": [{
 			"id": "tg_inaccurateval",
-			"val": "1"
+			"val": 1
 		}]
 	}, {
 		"name": "Both Barrels",
@@ -753,10 +753,10 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "3"
+			"val": 3
 		}, {
 			"type": "Threat",
-			"val": "3"
+			"val": 3
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -767,7 +767,7 @@
 		"special_equipment": [],
 		"tags": [{
 			"id": "tg_inaccurateval",
-			"val": "2"
+			"val": 2
 		}, {
 			"id": "tg_overkill"
 		}]
@@ -804,7 +804,7 @@
 	"sp": "1",
 	"tags": [{
 		"id": "tg_accurate",
-		"val": "1"
+		"val": 1
 	}],
 	"actions": [{
 		"name": "Activate Mounted Turret",
@@ -873,7 +873,7 @@
 	}],
 	"range": [{
 		"type": "Threat",
-		"val": "2"
+		"val": 2
 	}],
 	"sp": 0,
 	"tags": [],
@@ -912,15 +912,15 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "5"
+		"val": 5
 	}, {
 		"type": "Threat",
-		"val": "3"
+		"val": 3
 	}],
 	"sp": 0,
 	"tags": [{
 		"id": "tg_loadingval",
-		"val": "6"
+		"val": 6
 	}],
 	"actions": [],
 	"bonuses": [],
@@ -957,10 +957,10 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "5"
+		"val": 5
 	}, {
 		"type": "Threat",
-		"val": "3"
+		"val": 3
 	}],
 	"sp": 0,
 	"tags": [],
@@ -986,10 +986,10 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "5"
+			"val": 5
 		}, {
 			"type": "Threat",
-			"val": "3"
+			"val": 3
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -1000,7 +1000,7 @@
 		"special_equipment": [],
 		"tags": [{
 			"id": "tg_loadingval",
-			"val": "6"
+			"val": 6
 		}]
 	}, {
 		"name": "Shotgun (CQB)",
@@ -1017,10 +1017,10 @@
 		}],
 		"range": [{
 			"type": "Cone",
-			"val": "2"
+			"val": 2
 		}, {
 			"type": "Threat",
-			"val": "2"
+			"val": 2
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -1060,10 +1060,10 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "5"
+		"val": 5
 	}, {
 		"type": "Threat",
-		"val": "3"
+		"val": 3
 	}],
 	"sp": 0,
 	"tags": [],
@@ -1089,10 +1089,10 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "5"
+			"val": 5
 		}, {
 			"type": "Threat",
-			"val": "3"
+			"val": 3
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -1103,7 +1103,7 @@
 		"special_equipment": [],
 		"tags": [{
 			"id": "tg_loadingval",
-			"val": "3"
+			"val": 3
 		}]
 	}, {
 		"name": "Blade Dusters (Melee)",
@@ -1120,7 +1120,7 @@
 		}],
 		"range": [{
 			"type": "Threat",
-			"val": "1"
+			"val": 1
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -1160,18 +1160,18 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "5"
+		"val": 5
 	}, {
 		"type": "Threat",
-		"val": "3"
+		"val": 3
 	}],
 	"sp": 0,
 	"tags": [{
 		"id": "tg_knockback",
-		"val": "1"
+		"val": 1
 	}, {
 		"id": "tg_loadingval",
-		"val": "5"
+		"val": 5
 	}],
 	"actions": [],
 	"bonuses": [],
@@ -1208,15 +1208,15 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "5"
+		"val": 5
 	}, {
 		"type": "Threat",
-		"val": "1"
+		"val": 1
 	}],
 	"sp": "1",
 	"tags": [{
 		"id": "tg_accurate",
-		"val": "2"
+		"val": 2
 	}, {
 		"id": "tg_unique"
 	}],
@@ -1268,10 +1268,10 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "5"
+			"val": 5
 		}, {
 			"type": "Threat",
-			"val": "1"
+			"val": 1
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -1296,10 +1296,10 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "1"
+			"val": 1
 		}, {
 			"type": "Threat",
-			"val": "1"
+			"val": 1
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -1336,13 +1336,13 @@
 		"type": "Variable"
 	}],
 	"range": [{
-		"val": "10",
+		"val": 10,
 		"type": "Range"
 	}],
 	"sp": 0,
 	"tags": [{
 		"id": "tg_accurate",
-		"val": "1"
+		"val": 1
 	}, {
 		"id": "tg_ap"
 	}],
@@ -1381,7 +1381,7 @@
 	}],
 	"range": [{
 		"type": "Line",
-		"val": "20"
+		"val": 20
 	}],
 	"sp": 0,
 	"tags": [{
@@ -1453,18 +1453,18 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "5"
+		"val": 5
 	}, {
 		"type": "Threat",
-		"val": "3"
+		"val": 3
 	}],
 	"sp": 0,
 	"tags": [{
 		"id": "tg_reliable",
-		"val": "1"
+		"val": 1
 	}, {
 		"id": "tg_inaccurate",
-		"val": "1"
+		"val": 1
 	}],
 	"actions": [],
 	"bonuses": [],
@@ -1501,15 +1501,15 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "5"
+		"val": 5
 	}, {
 		"type": "Threat",
-		"val": "3"
+		"val": 3
 	}],
 	"sp": 0,
 	"tags": [{
 		"id": "tg_reliable",
-		"val": "2"
+		"val": 2
 	}, {
 		"id": "tg_inaccurate"
 	}],
@@ -1544,11 +1544,11 @@
 	"no_synergy": false,
 	"damage": [{
 		"type": "Kinetic",
-		"val": "2D6"
+		"val": "2d6"
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "8"
+		"val": 8
 	}],
 	"sp": 0,
 	"tags": [{
@@ -1576,7 +1576,7 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "8"
+			"val": 8
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -1587,7 +1587,7 @@
 		"special_equipment": [],
 		"tags": [{
 			"id": "tg_reliable",
-			"val": "2"
+			"val": 2
 		}]
 	}, {
 		"name": "FASTER",
@@ -1604,7 +1604,7 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "8"
+			"val": 8
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -1615,10 +1615,10 @@
 		"special_equipment": [],
 		"tags": [{
 			"id": "tg_reliable",
-			"val": "4"
+			"val": 4
 		}, {
 			"id": "tg_heat_self",
-			"val": "3"
+			"val": 3
 		}]
 	}]
 }, {
@@ -1648,7 +1648,7 @@
 	}],
 	"range": [{
 		"type": "Threat",
-		"val": "1"
+		"val": 1
 	}],
 	"sp": 0,
 	"tags": [{
@@ -1691,7 +1691,7 @@
 	}],
 	"range": [{
 		"type": "Threat",
-		"val": "1"
+		"val": 1
 	}],
 	"sp": 0,
 	"tags": [],
@@ -1726,7 +1726,7 @@
 	"no_synergy": false,
 	"damage": [],
 	"range": [{
-		"val": "8",
+		"val": 8,
 		"type": "Range"
 	}],
 	"sp": 0,
@@ -1794,7 +1794,7 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "8"
+		"val": 8
 	}],
 	"sp": "1",
 	"tags": [{
@@ -1857,13 +1857,13 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "5"
+			"val": 5
 		}, {
 			"type": "Blast",
-			"val": "1"
+			"val": 1
 		}, {
 			"type": "Threat",
-			"val": "3"
+			"val": 3
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -1892,13 +1892,13 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "4"
+			"val": 4
 		}, {
 			"type": "Cone",
-			"val": "2"
+			"val": 2
 		}, {
 			"type": "Threat",
-			"val": "3"
+			"val": 3
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -1927,13 +1927,13 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "4"
+			"val": 4
 		}, {
 			"type": "Line",
-			"val": "2"
+			"val": 2
 		}, {
 			"type": "Threat",
-			"val": "3"
+			"val": 3
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -1975,10 +1975,10 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "10"
+		"val": 10
 	}, {
 		"type": "Threat",
-		"val": "3"
+		"val": 3
 	}],
 	"sp": 0,
 	"tags": [],
@@ -2030,7 +2030,7 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "0"
+		"val": 0
 	}],
 	"sp": 0,
 	"tags": [{
@@ -2099,14 +2099,14 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "10"
+		"val": 10
 	}],
 	"sp": "1",
 	"tags": [{
 		"id": "tg_unique"
 	}, {
 		"id": "tg_loadingval",
-		"val": "4"
+		"val": 4
 	}],
 	"actions": [],
 	"bonuses": [],
@@ -2130,7 +2130,7 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "10"
+			"val": 10
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -2155,7 +2155,7 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "10"
+			"val": 10
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -2180,7 +2180,7 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "10"
+			"val": 10
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -2205,7 +2205,7 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "10"
+			"val": 10
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -2216,7 +2216,7 @@
 		"special_equipment": [],
 		"tags": [{
 			"id": "tg_heat_self",
-			"val": "1"
+			"val": 1
 		}]
 	}]
 }, {
@@ -2252,7 +2252,7 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "10"
+		"val": 10
 	}],
 	"sp": "1",
 	"tags": [{
@@ -2286,7 +2286,7 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "10"
+			"val": 10
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -2297,7 +2297,7 @@
 		"special_equipment": [],
 		"tags": [{
 			"id": "tg_reliable",
-			"val": "1"
+			"val": 1
 		}, {
 			"id": "tg_ap"
 		}, {
@@ -2324,7 +2324,7 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "10"
+			"val": 10
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -2364,7 +2364,7 @@
 		}],
 		"range": [{
 			"type": "Range",
-			"val": "10"
+			"val": 10
 		}],
 		"actions": [],
 		"bonuses": [],
@@ -2377,7 +2377,7 @@
 			"id": "tg_overkill"
 		}, {
 			"id": "tg_knockback",
-			"val": "1"
+			"val": 1
 		}]
 	}]
 }, {
@@ -2407,10 +2407,10 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "15"
+		"val": 15
 	}, {
 		"type": "Threat",
-		"val": "3"
+		"val": 3
 	}],
 	"sp": 0,
 	"tags": [],
@@ -2475,7 +2475,7 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "15"
+		"val": 15
 	}],
 	"sp": 0,
 	"tags": [],
@@ -2540,7 +2540,7 @@
 	}],
 	"range": [{
 		"type": "Range",
-		"val": "15"
+		"val": 15
 	}],
 	"sp": 0,
 	"tags": [],
@@ -2558,6 +2558,103 @@
 		"init": "",
 		"trigger": ""
 	}],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}, {
+	"id": "JAKAL_HOWL_AUXGUN",
+	"name": "Field Artillery",
+	"source": "JAKAL",
+	"license": "HOWL",
+	"license_level": 3,
+	"description": "",
+	"effect": "",
+	"on_attack": "",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Auxiliary",
+	"type": "Launcher",
+	"cost": 1,
+	"barrage": true,
+	"skirmish": true,
+	"no_attack": false,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Kinetic",
+		"val": "1d3"
+	}, {
+		"type": "Explosive",
+		"val": "1d3"
+	}],
+	"range": [{
+		"type": "Range",
+		"val": 10
+	}],
+	"sp": 0,
+	"tags": [{
+		"id": "tg_loading",
+		"val": 1
+	}, {
+		"id": "tg_arcing"
+	}],
+	"actions": [],
+	"bonuses": [],
+	"synergies": [],
+	"deployables": [],
+	"counters": [],
+	"integrated": [],
+	"special_equipment": [],
+	"profiles": []
+}, {
+	"id": "JAKAL_HOWL_MAIN_ARTILLERY",
+	"name": "Artillery Piece",
+	"source": "JAKAL",
+	"license": "HOWL",
+	"license_level": 3,
+	"description": "",
+	"effect": "",
+	"on_attack": "",
+	"on_hit": "",
+	"on_crit": "",
+	"mount": "Main",
+	"type": "Melee",
+	"cost": 1,
+	"barrage": true,
+	"skirmish": true,
+	"no_attack": false,
+	"no_mods": false,
+	"no_core_bonus": false,
+	"no_bonus": false,
+	"no_synergy": false,
+	"damage": [{
+		"type": "Kinetic",
+		"val": "1d6"
+	}, {
+		"type": "Explosive",
+		"val": "1d6"
+	}, {
+		"type": "Energy",
+		"val": 2
+	}],
+	"range": [{
+		"type": "Range",
+		"val": 10
+	}],
+	"sp": 0,
+	"tags": [{
+		"id": "tg_arcing"
+	}, {
+		"id": "tg_loading",
+		"val": 1
+	}],
+	"actions": [],
 	"bonuses": [],
 	"synergies": [],
 	"deployables": [],
